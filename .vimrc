@@ -5,9 +5,12 @@ command Root cd %:p:h:h
 command File cd %:p:h
 syntax on
 set vb t_vb=
-tnoremap <Esc> <C-\><C-n>
-" colorscheme onedark
 
+tnoremap <Esc> <C-\><C-n>
+:nnoremap <C-n> :bnext<CR>
+:nnoremap <C-p> :bprevious<CR>
+
+" colorscheme onedark
 colorscheme Papercolor
 set background=light
 
