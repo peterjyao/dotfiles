@@ -1,0 +1,4 @@
+[http]
+	sslbackend = schannel
+[credential "helperselector"]
+	selected = wincred

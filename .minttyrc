@@ -1,0 +1,17 @@
+ThemeFile=onedark
+Font=Cartograph CF
+FontHeight=10
+Columns=200
+Rows=50
+Language=en_US
+Term=xterm-256color
+CursorType=block
+CursorBlinks=yes
+Transparency=low
+ConfirmExit=no
+BoldAsColour=yes
+BoldAsFont=no
+BellType=0
+OpaqueWhenFocused=yes
+FontWeight=400
+ClicksPlaceCursor=no
