@@ -2,3 +2,6 @@
 	sslbackend = schannel
 [credential "helperselector"]
 	selected = wincred
+[user]
+	name = Yao Peter - Basel
+	email = peter.yao@lonza.com
