@@ -1,6 +1,7 @@
 set guifont=Cartograph\ CF:h10
 set number
 set hidden
+set linebreak
 command Root cd %:p:h:h
 command File cd %:p:h
 syntax on
