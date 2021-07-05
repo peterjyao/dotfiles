@@ -23,6 +23,8 @@ Installed apps:
   sublime-text 4-4107 [extras]
   sumatrapdf 3.2 [extras]
   tabula 1.2.1 [extras]
+  vifm 0.11 [extras]
+  vim 8.2.2824 [main]
   vscodium-portable 1.57.1 [extras]
   windows-terminal 1.8.1444.0 [extras]
   zotero 5.0.96.2 [extras]

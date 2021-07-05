@@ -1,8 +1,8 @@
-ThemeFile=onedark-3
+ThemeFile=onedark
 Font=Cartograph CF
 FontHeight=10
-Columns=200
-Rows=50
+Columns=100
+Rows=25
 Language=en_US
 Term=xterm-256color
 CursorType=block

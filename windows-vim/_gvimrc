@@ -1,0 +1,14 @@
+syntax on
+colorscheme Papercolor
+set background=dark
+set lines=25 columns=100
+set guioptions-=T
+set visualbell
+set vb t_vb=
+
+let g:slime_target = "vimterminal"
+
+let g:diminactive_use_colorcolumn = 0
+let g:diminactive_use_syntax = 1
+
+language en_US

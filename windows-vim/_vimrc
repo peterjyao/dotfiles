@@ -1,3 +1,4 @@
+language en_US
 set guifont=Cartograph\ CF:h10
 set number
 set hidden
@@ -6,13 +7,17 @@ set clipboard^=unnamed
 command Root cd %:p:h:h
 command File cd %:p:h
 syntax on
+
+set visualbell
 set vb t_vb=
 
 tnoremap <Esc> <C-\><C-n>
 :nnoremap <C-n> :bnext<CR>
 :nnoremap <C-p> :bprevious<CR>
+:imap <C-w> <C-o><C-w>
+:map <C-Tab> <C-W>w
 
-colorscheme onedark
+" colorscheme onedark
 " colorscheme Papercolor
 " set background=light
 
