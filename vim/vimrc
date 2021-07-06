@@ -12,9 +12,9 @@ tnoremap <Esc> <C-\><C-n>
 :nnoremap <C-n> :bnext<CR>
 :nnoremap <C-p> :bprevious<CR>
 
-colorscheme onedark
-" colorscheme Papercolor
-" set background=light
+" colorscheme onedark
+colorscheme Papercolor
+set background=dark
 
 " set autochdir
 autocmd BufEnter * silent! lcd %:p:h

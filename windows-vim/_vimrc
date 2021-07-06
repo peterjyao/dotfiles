@@ -11,11 +11,18 @@ syntax on
 set visualbell
 set vb t_vb=
 
-tnoremap <Esc> <C-\><C-n>
+:map <C-Tab> <C-W>w
+:tmap <C-Tab> <C-W>w
+:imap <C-w> <C-o><C-w>
+
 :nnoremap <C-n> :bnext<CR>
 :nnoremap <C-p> :bprevious<CR>
-:imap <C-w> <C-o><C-w>
-:map <C-Tab> <C-W>w
+:tmap <C-n> <Esc>:bnext<CR>
+:tmap <C-p> <Esc>:bprevious<CR>
+:inoremap <C-n> <Esc>:bnext<CR>
+:inoremap <C-p> <Esc>:bprevious<CR>
+
+:tnoremap <Esc> <C-\><C-n>
 
 " colorscheme onedark
 " colorscheme Papercolor

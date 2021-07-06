@@ -3,6 +3,7 @@ Installed apps:
   7zip 19.00 [main]
   alacritty 0.8.0 [extras]
   autohotkey 1.1.33.09 [extras]
+  broot 1.6.1 [main]
   cacert 2021-05-25 [main]
   csview 0.3.8 [main]
   emacs 27.2 [extras]
