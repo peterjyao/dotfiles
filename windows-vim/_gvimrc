@@ -1,10 +1,15 @@
 syntax on
 colorscheme Papercolor
 set background=dark
-set lines=25 columns=100
+set lines=30 columns=100
+set guioptions-=m
 set guioptions-=T
+set guioptions-=l
+set guioptions-=r
 set visualbell
 set vb t_vb=
+set laststatus=2
+set backspace=2
 
 let g:slime_target = "vimterminal"
 
@@ -12,3 +17,7 @@ let g:diminactive_use_colorcolumn = 0
 let g:diminactive_use_syntax = 1
 
 language en_US
+
+" set guioptions+=r
+" au VimEnter * if line('$') > &lines | set go+=r | else | set go-=r | endif
+" au VimResized * if line('$') > &lines | set go+=r | else | set go-=r | endif
