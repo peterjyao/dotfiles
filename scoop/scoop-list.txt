@@ -9,6 +9,7 @@ Installed apps:
   emacs 27.2 [extras]
   firefox current [extras]
   git 2.32.0.windows.1 [main]
+  gnuplot 5.2.8 [C:\Users\pyao1\scoop\workspace\gnuplot.json]
   inkscape 1.1 [extras]
   innounp 0.50 [main]
   jabref 5.2 [extras]
