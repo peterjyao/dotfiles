@@ -1,6 +1,8 @@
 channels:
-  - conda-forge
+# disabled: cannot use conda-forge behind firewall (files .tar.bz2 are blocked)
+#   - conda-forge
   - defaults
-channel_priority: strict
+# channel_priority: strict
+channel_priority: flexible
 auto_activate_base: false
-ssl_verify: false
+# ssl_verify: false
