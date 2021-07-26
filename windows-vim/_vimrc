@@ -1,6 +1,7 @@
 language en_US
 set guifont=Cartograph\ CF:h10
 set number
+set ruler
 set hidden
 set linebreak
 set clipboard^=unnamed

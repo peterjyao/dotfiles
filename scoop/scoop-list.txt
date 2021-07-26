@@ -17,6 +17,7 @@ Installed apps:
   keepassxc 2.6.6 [extras]
   lessmsi 1.8.1 [main]
   links 2.23 [main]
+  neovim 0.5.0 [main]
   pandoc 2.14.0.2 [main]
   pdftk 2.02 [main]
   python 3.9.6 [main]
@@ -25,7 +26,7 @@ Installed apps:
   rstudio 1.4.1717 [extras]
   scantailor-advanced 1.0.16 [extras]
   sublime-merge 2056 [extras]
-  sublime-text 4-4107 [extras]
+  sublime-text current *failed*
   sumatrapdf 3.2 [extras]
   tabula 1.2.1 [extras]
   thonny 3.3.11 [extras]
