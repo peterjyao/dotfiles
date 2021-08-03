@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/c/Users/pyao1/OneDrive - Lonza/projects/photostability_aks-008-allakos/docs/protocol/tables'
+let g:netrw_dirhist_6='/c/Users/pyao1/OneDrive - Lonza/projects/photostability_aks-008-allakos/docs/protocol'
+let g:netrw_dirhist_5='/c/Users/pyao1/OneDrive - Lonza/projects/photostability_aks-008-allakos/docs'
+let g:netrw_dirhist_4='/c/Users/pyao1/OneDrive - Lonza/projects/photostability_aks-008-allakos'
+let g:netrw_dirhist_3='/c/Users/pyao1/OneDrive - Lonza/projects/mes_ntt-001/R'
+let g:netrw_dirhist_2='/c/Users/pyao1/OneDrive - Lonza/projects/presentation_2021-06-18-tech-review-meeting/R'
+let g:netrw_dirhist_1='/usr/share/vim/vim82'

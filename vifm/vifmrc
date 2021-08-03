@@ -66,8 +66,8 @@ set norunexec
 
 " colorscheme Default-256 Default
 " colorscheme onedark
-" colorscheme papercolor-dark
-colorscheme g80
+colorscheme papercolor-dark
+" colorscheme g80
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
@@ -505,7 +505,8 @@ nnoremap <c-u> <c-w>x
 "
 " let $VIFM_SERVER_NAME = v:servername
 
-:noremap O :!gvim --servername gvim --remote "" %"c:p
+:noremap O :!gvim --servername gvim --remote "" %"c:p<cr>
+" :noremap I :!vim --servername vim --remote "" %"c:p
 :noremap o :!start "" %"c:p<cr>
 " :noremap E :!explorer.exe .<cr>
 :noremap E :!start "" %"d<cr>

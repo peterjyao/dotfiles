@@ -1,5 +1,6 @@
 syntax on
 colorscheme Papercolor
+" colorscheme onedark
 set background=dark
 set lines=30 columns=100
 set guioptions-=m
@@ -10,11 +11,6 @@ set visualbell
 set vb t_vb=
 set laststatus=2
 set backspace=2
-
-let g:slime_target = "vimterminal"
-
-let g:diminactive_use_colorcolumn = 0
-let g:diminactive_use_syntax = 1
 
 language en_US
 

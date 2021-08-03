@@ -11,6 +11,8 @@ syntax on
 
 set visualbell
 set vb t_vb=
+set laststatus=2
+set backspace=2
 
 :map <C-Tab> <C-W>w
 :tmap <C-Tab> <C-W>w
@@ -32,7 +34,13 @@ set vb t_vb=
 " set autochdir
 autocmd BufEnter * silent! lcd %:p:h
 
+" new command to close buffer without closing the split
 command! Bd bp|bd #
 
-let g:slime_target = "tmux"
-let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
+" let g:slime_target = "tmux"
+" let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
+let g:slime_target = "vimterminal"
+
+let g:diminactive_use_colorcolumn = 0
+let g:diminactive_use_syntax = 1
+
