@@ -113,7 +113,10 @@ endif
 
 " Set custom status line look
 
-set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+" set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
+" set statusline="  %-30t  %15s %20d  "
+set statusline="  selected: %t"
+
 
 " ------------------------------------------------------------------------------
 
@@ -505,11 +508,13 @@ nnoremap <c-u> <c-w>x
 "
 " let $VIFM_SERVER_NAME = v:servername
 
-:noremap O :!gvim --servername gvim --remote "" %"c:p<cr>
+:noremap O :!gvim --servername gvim --remote "" %"c:p &<cr>
 " :noremap I :!vim --servername vim --remote "" %"c:p
-:noremap o :!start "" %"c:p<cr>
+:noremap o :!start "" %"c:p &<cr>
 " :noremap E :!explorer.exe .<cr>
-:noremap E :!start "" %"d<cr>
+:noremap E :!start "" %"d &<cr>
+
+:noremap s :!alacritty.exe &<cr>
 
 set timefmt="%Y-%m-%d %H:%M"
 set viewcolumns=-{name},{mtime},7{}.

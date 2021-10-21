@@ -27,6 +27,7 @@ Installed apps:
   R 4.1.0 [main]
   rstudio 1.4.1717 [extras]
   scantailor-advanced 1.0.16 [extras]
+  scoop-search 1.1.0 [main]
   sublime-merge 2056 [extras]
   sublime-text current *failed*
   sumatrapdf 3.2 [extras]
