@@ -13,10 +13,6 @@
 (when (eq system-type 'windows-nt)
   (setenv "Home" (getenv "UserProfile")))
 
-;; File handling for org mode links
-(add-to-list 'org-file-apps '("\\.xlsx\\'" . default))
-(add-to-list 'org-file-apps '("\\.pptx\\'" . default))
-
 ;; Add to load path for simple libraries
 (add-to-list 'load-path "~/AppData/Roaming/.emacs.d/lisp/")
 
@@ -86,17 +82,27 @@
           ,(concat BACKDIR "\\2") t) auto-save-file-name-transforms))
 
 ;; org-mode stuff
-(setq org-directory "~/OneDrive - Lonza/notebooks/org-mode")
+(setq org-directory "~/OneDrive - Lonza/notebooks/org")
 (setq org-default-notes-file (concat org-directory "/notes/capture.org"))
 (global-set-key (kbd "C-c c") #'org-capture)
 
 (defun my/generate-org-note-name ()
   (setq my-org-note--name (read-string "Name: "))
   (setq my-org-note--time (format-time-string "%Y-%m-%d"))
-  (expand-file-name (format "%s_%s.org" my-org-note--time my-org-note--name) "~/OneDrive - Lonza/notebooks/org-mode/notes"))
+  (expand-file-name (format "%s_%s.org" my-org-note--time my-org-note--name) "~/OneDrive - Lonza/notebooks/org/notes"))
 
 (setq org-capture-templates
   '(("n" "Note" plain 
      (file my/generate-org-note-name)
      "%(format \"#+TITLE: %s\n#+DATE: %s\n\" my-org-note--name my-org-note--time)\n* %?")))
 
+;; File handling for org mode links
+;; (setq org-file-apps '("\\.xlsx\\'" . default))
+;; (add-to-list 'org-file-apps '("\\.pptx\\'" . default))
+
+(setq org-file-apps
+    '(("\\.docx\\'" . default)
+      ("\\.xlsx\\'" . default)
+      ("\\.pptx\\'" . default)
+      ("\\.pdf\\'" . default)
+      (auto-mode . emacs)))
