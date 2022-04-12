@@ -1,0 +1,102 @@
+;; Start maximized
+;; (add-hook 'window-setup-hook 'toggle-frame-maximized t)
+
+(custom-set-faces                                                                                    
+ '(default ((t (:height 100 :family "Dank Mono")))))
+
+;; Remove some window stuff
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+
+;; Fix home directory
+(when (eq system-type 'windows-nt)
+  (setenv "Home" (getenv "UserProfile")))
+
+;; File handling for org mode links
+(add-to-list 'org-file-apps '("\\.xlsx\\'" . default))
+(add-to-list 'org-file-apps '("\\.pptx\\'" . default))
+
+;; Add to load path for simple libraries
+(add-to-list 'load-path "~/AppData/Roaming/.emacs.d/lisp/")
+
+;; Move annoying Custom stuff to its own file
+(setq custom-file "~/AppData/Roaming/.emacs.d/custom.el")
+(load custom-file)
+
+;; Custom themes
+(setq custom-theme-directory "~/.emacs.d/themes")
+;; (load-theme 'ayu-grey t)
+;; (load-theme 'atom-one-dark t)
+
+;; Set up package.el to work with MELPA
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+;; (package-initialize)
+;; (package-refresh-contents)
+
+;; evil
+;; (unless (package-installed-p 'evil)
+;;   (package-install 'evil))
+(require 'evil)
+(evil-mode 1)
+(setq evil-want-fine-undo t)
+
+;; ranger
+;; (unless (package-installed-p 'ranger)
+;;   (package-install 'ranger))
+(require 'ranger)
+(setq ranger-show-hidden t)
+
+;; ess (emacs speaks statistics)
+;; (unless (package-installed-p 'ess)
+;;   (package-install 'ess))
+(require 'ess-r-mode)
+
+;; sunrise
+;; (require 'sunrise)
+;; (add-to-list 'auto-mode-alist '("\.srvm\'" . sunrise-virtual-mode))
+
+;; base16 theme
+;; (unless (package-installed-p 'base16-theme)
+;;   (package-install 'base16-theme))
+(require 'base16-theme)
+;; (load-theme 'base16-materia t)
+(load-theme 'base16-dracula t)
+;; (load-theme 'base16-phd t)
+;; (load-theme 'base16-default-dark t)
+
+;; Start server mode
+(server-start)
+
+;; Show line numbers
+(global-display-line-numbers-mode)
+
+;; Copy paste with Super C, Super V
+;; (require 'simpleclip)
+;; (simpleclip-mode 1)
+
+;; move backups to one place
+;; (setq backup-directory-alist `(("." . "~/.emacs-backups")))
+(defvar BACKDIR (expand-file-name "~/.emacs_backups/"))
+(setq backup-directory-alist `((".*" . ,BACKDIR)))
+(setq auto-save-file-name-transforms
+  (cons `(,(car (car auto-save-file-name-transforms)) 
+          ,(concat BACKDIR "\\2") t) auto-save-file-name-transforms))
+
+;; org-mode stuff
+(setq org-directory "~/OneDrive - Lonza/notebooks/org-mode")
+(setq org-default-notes-file (concat org-directory "/notes/capture.org"))
+(global-set-key (kbd "C-c c") #'org-capture)
+
+(defun my/generate-org-note-name ()
+  (setq my-org-note--name (read-string "Name: "))
+  (setq my-org-note--time (format-time-string "%Y-%m-%d"))
+  (expand-file-name (format "%s_%s.org" my-org-note--time my-org-note--name) "~/OneDrive - Lonza/notebooks/org-mode/notes"))
+
+(setq org-capture-templates
+  '(("n" "Note" plain 
+     (file my/generate-org-note-name)
+     "%(format \"#+TITLE: %s\n#+DATE: %s\n\" my-org-note--name my-org-note--time)\n* %?")))
+

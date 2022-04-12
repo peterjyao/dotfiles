@@ -65,9 +65,12 @@ set norunexec
 " List of color schemes to try (picks the first one supported by the terminal)
 
 " colorscheme Default-256 Default
-" colorscheme onedark
 colorscheme papercolor-dark
 " colorscheme g80
+" colorscheme ph
+" colorscheme iceberg
+" colorscheme zenburn_1
+" colorscheme gruvbox
 
 " Format for displaying time in file list. For example:
 " TIME_STAMP_FORMAT=%m/%d-%H:%M
@@ -508,9 +511,11 @@ nnoremap <c-u> <c-w>x
 "
 " let $VIFM_SERVER_NAME = v:servername
 
-:noremap O :!gvim --servername gvim --remote "" %"c:p &<cr>
-" :noremap I :!vim --servername vim --remote "" %"c:p
+:noremap V :!gvim --servername gvim --remote "" %"c:p &<cr>
+:noremap O :!emacsclientw %"c:p &<cr>
+":noremap I :!vim --servername vim --remote "" %"c:p
 :noremap o :!start "" %"c:p &<cr>
+":noremap o :!"C:\Users\pyao1\QuickLook-3.7.1\QuickLook.exe" %"c:p &<cr>
 " :noremap E :!explorer.exe .<cr>
 :noremap E :!start "" %"d &<cr>
 

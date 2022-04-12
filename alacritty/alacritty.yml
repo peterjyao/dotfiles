@@ -21,7 +21,7 @@ window:
     lines: 30
   position:
     x: 500
-    y: 300
+    y: 200
 
   # Adds this many blank pixels of padding around the window
   # Units are physical pixels; this is not DPI aware.
@@ -74,7 +74,7 @@ font:
     style: Bold Italic
 
   # Point size of the font
-  size: 10.0
+  size: 9.0
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
@@ -617,7 +617,8 @@ live_config_reload: true
 # Entries in shell.args are passed unmodified as arguments to the shell.
 #
 shell:
-  C:\Windows\System32\cmd.exe
+#  program: C:\Users\pyao1\scoop\apps\yori\current\yori.exe
+  program: C:\Windows\System32\cmd.exe
 #  program: C:\Users\pyao1\PortableGit\bin\bash.exe
 #  args:
 #    - --login
