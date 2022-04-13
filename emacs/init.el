@@ -1,13 +1,22 @@
 ;; Start maximized
 ;; (add-hook 'window-setup-hook 'toggle-frame-maximized t)
 
+;; set font
 (custom-set-faces                                                                                    
  '(default ((t (:height 100 :family "Dank Mono")))))
+
+;; set timestamp format
+(setq ls-lisp-format-time-list  '("%Y-%m-%d %H:%M" "%Y-%m-%d %H:%M")
+      ls-lisp-use-localized-time-format t)
 
 ;; Remove some window stuff
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
+
+;; shift + arrow keys to switch focus
+(windmove-default-keybindings)
+(setq org-replace-disputed-keys t)
 
 ;; Fix home directory
 (when (eq system-type 'windows-nt)
@@ -29,7 +38,7 @@
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
-;; (package-initialize)
+(package-initialize)
 ;; (package-refresh-contents)
 
 ;; evil
@@ -39,11 +48,20 @@
 (evil-mode 1)
 (setq evil-want-fine-undo t)
 
+;; dirvish
+(unless (package-installed-p 'dirvish)
+  (package-install 'dirvish))
+(require 'dirvish)
+
 ;; ranger
 ;; (unless (package-installed-p 'ranger)
 ;;   (package-install 'ranger))
 (require 'ranger)
+;; (setq ranger-override-dired-mode t)
 (setq ranger-show-hidden t)
+(setq ranger-show-literal nil)
+(setq ranger-dont-show-binary t)
+;; (setq ranger-width-preview 0.5)
 
 ;; ess (emacs speaks statistics)
 ;; (unless (package-installed-p 'ess)
@@ -59,9 +77,10 @@
 ;;   (package-install 'base16-theme))
 (require 'base16-theme)
 ;; (load-theme 'base16-materia t)
-(load-theme 'base16-dracula t)
+;; (load-theme 'base16-dracula t)
 ;; (load-theme 'base16-phd t)
 ;; (load-theme 'base16-default-dark t)
+(load-theme 'base16-monokai t)
 
 ;; Start server mode
 (server-start)
