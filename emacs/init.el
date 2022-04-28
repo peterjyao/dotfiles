@@ -1,11 +1,19 @@
 ;; Start maximized
 ;; (add-hook 'window-setup-hook 'toggle-frame-maximized t)
 
-;; set font
+;; Set initial window size
+(if (window-system)
+    (set-frame-size (selected-frame) 130 40))
+
+;; Other frame sizes
+(add-to-list 'default-frame-alist '(height . 40))
+(add-to-list 'default-frame-alist '(width . 130))
+
+;; Set font
 (custom-set-faces                                                                                    
  '(default ((t (:height 100 :family "Dank Mono")))))
 
-;; set timestamp format
+;; Set timestamp format
 (setq ls-lisp-format-time-list  '("%Y-%m-%d %H:%M" "%Y-%m-%d %H:%M")
       ls-lisp-use-localized-time-format t)
 
@@ -14,7 +22,7 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
-;; shift + arrow keys to switch focus
+;; Shift + arrow keys to switch focus
 (windmove-default-keybindings)
 (setq org-replace-disputed-keys t)
 
@@ -47,6 +55,7 @@
 (require 'evil)
 (evil-mode 1)
 (setq evil-want-fine-undo t)
+;; (evil-set-initial-state 'bs-mode 'emacs)
 
 ;; dirvish
 (unless (package-installed-p 'dirvish)
@@ -76,11 +85,12 @@
 ;; (unless (package-installed-p 'base16-theme)
 ;;   (package-install 'base16-theme))
 (require 'base16-theme)
+;; (load-theme 'base16-onedark t)
 ;; (load-theme 'base16-materia t)
-;; (load-theme 'base16-dracula t)
+(load-theme 'base16-dracula t)
 ;; (load-theme 'base16-phd t)
 ;; (load-theme 'base16-default-dark t)
-(load-theme 'base16-monokai t)
+;; (load-theme 'base16-monokai t)
 
 ;; Start server mode
 (server-start)
@@ -125,3 +135,12 @@
       ("\\.pptx\\'" . default)
       ("\\.pdf\\'" . default)
       (auto-mode . emacs)))
+(put 'dired-find-alternate-file 'disabled nil)
+
+;; Set pdf viewer
+;; (setq doc-view-ghostscript-program "C:/Users/pyao1/scoop/apps/ghostscript/current/bin/gswin64.exe")
+(setq doc-view-ghostscript-program "gswin64.exe")
+
+;; Persistent history
+(savehist-mode 1)
+(desktop-save-mode 1)

@@ -13,6 +13,7 @@ Installed apps:
   firefox 89.0.2 *failed*
   fzf 0.27.2 [main]
   gcc 11.2.0 [main]
+  ghostscript 9.56.1 [C:\Users\pyao1\scoop\workspace\ghostscript.json]
   git 2.32.0.windows.1 [main]
   gnuplot 5.2.8 [C:\Users\pyao1\scoop\workspace\gnuplot.json]
   inkscape 1.1 [extras]
@@ -20,6 +21,7 @@ Installed apps:
   jabref 5.2 [extras]
   keepassxc 2.6.6 [extras]
   lessmsi 1.8.1 [main]
+  lf r27 [C:\Users\pyao1\scoop\workspace\lf.json]
   links 2.23 [main]
   mc 4.8.27 [extras]
   micro 2.0.10 [main]
