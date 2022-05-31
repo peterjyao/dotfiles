@@ -49,6 +49,6 @@ Installed apps:
   wget 1.21.3 [C:\Users\pyao1\scoop\workspace\wget.json]
   windows-terminal 1.8.1444.0 [extras]
   yori 1.70 [main]
-  zotero 5.0.96.2 [extras]
+  zotero 6.0.7 [C:\Users\pyao1\scoop\workspace\zotero.json]
   zstd 1.5.0 [main]
 

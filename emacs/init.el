@@ -26,6 +26,9 @@
 (windmove-default-keybindings)
 (setq org-replace-disputed-keys t)
 
+;; Bind C-tab to other-window
+(global-set-key (kbd "<C-tab>") 'other-window)
+
 ;; Fix home directory
 (when (eq system-type 'windows-nt)
   (setenv "Home" (getenv "UserProfile")))
@@ -70,6 +73,7 @@
 (setq ranger-show-hidden t)
 (setq ranger-show-literal nil)
 (setq ranger-dont-show-binary t)
+(setq ranger-cleanup-eagerly t)
 ;; (setq ranger-width-preview 0.5)
 
 ;; ess (emacs speaks statistics)
@@ -85,19 +89,22 @@
 ;; (unless (package-installed-p 'base16-theme)
 ;;   (package-install 'base16-theme))
 (require 'base16-theme)
+(setq base16-highlight-mode-line 'box)
+;; Set the cursor color based on the evil state
+;; (load-theme 'base16-hardcore t)
 ;; (load-theme 'base16-onedark t)
 ;; (load-theme 'base16-materia t)
-(load-theme 'base16-dracula t)
+;; (load-theme 'base16-dracula t)
 ;; (load-theme 'base16-phd t)
 ;; (load-theme 'base16-default-dark t)
-;; (load-theme 'base16-monokai t)
+(load-theme 'base16-monokai t)
 
 ;; Start server mode
 (server-start)
 
 ;; Show line numbers
 (global-display-line-numbers-mode)
-
+(setq column-number-mode t)
 ;; Copy paste with Super C, Super V
 ;; (require 'simpleclip)
 ;; (simpleclip-mode 1)
@@ -111,14 +118,14 @@
           ,(concat BACKDIR "\\2") t) auto-save-file-name-transforms))
 
 ;; org-mode stuff
-(setq org-directory "~/OneDrive - Lonza/notebooks/org")
+(setq org-directory "~/OneDrive - Lonza/notebooks/org-mode")
 (setq org-default-notes-file (concat org-directory "/notes/capture.org"))
 (global-set-key (kbd "C-c c") #'org-capture)
 
 (defun my/generate-org-note-name ()
   (setq my-org-note--name (read-string "Name: "))
   (setq my-org-note--time (format-time-string "%Y-%m-%d"))
-  (expand-file-name (format "%s_%s.org" my-org-note--time my-org-note--name) "~/OneDrive - Lonza/notebooks/org/notes"))
+  (expand-file-name (format "%s_%s.org" my-org-note--time my-org-note--name) "~/OneDrive - Lonza/notebooks/org-mode/notes"))
 
 (setq org-capture-templates
   '(("n" "Note" plain 
@@ -144,3 +151,8 @@
 ;; Persistent history
 (savehist-mode 1)
 (desktop-save-mode 1)
+
+;; quarto-mode
+;; (unless (package-installed-p 'quarto-mode)
+;;   (package-install 'quarto-mode))
+(require 'quarto-mode)
