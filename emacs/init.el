@@ -99,6 +99,13 @@
 ;; (load-theme 'base16-default-dark t)
 (load-theme 'base16-monokai t)
 
+;; ace-window
+;; (unless (package-installed-p 'ace-window)
+;;   (package-install 'ace-window))
+(require 'ace-window)
+(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+(global-set-key (kbd "M-o") 'ace-window)
+
 ;; Start server mode
 (server-start)
 
