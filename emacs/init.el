@@ -103,7 +103,10 @@
 ;; (unless (package-installed-p 'ace-window)
 ;;   (package-install 'ace-window))
 (require 'ace-window)
-(setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+(setq aw-keys '(?a ?s ?d ?f ?g ?h ?k ?l))
+(setq aw-scope 'frame)
+(setq aw-dispatch-always 't)
+;; (setq aw-ignore-current 't)
 (global-set-key (kbd "M-o") 'ace-window)
 
 ;; Start server mode
