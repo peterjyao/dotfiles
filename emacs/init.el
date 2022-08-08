@@ -26,6 +26,12 @@
 (windmove-default-keybindings)
 (setq org-replace-disputed-keys t)
 
+;; Make shell open in current frame
+;; https://emacs.stackexchange.com/a/44846
+(add-to-list 'display-buffer-alist
+             `(,(regexp-quote "*shell") display-buffer-same-window))
+             ;; '("^\\*shell\\*$" . (display-buffer-same-window)))
+
 ;; Bind C-tab to other-window
 (global-set-key (kbd "<C-tab>") 'other-window)
 
@@ -61,9 +67,9 @@
 ;; (evil-set-initial-state 'bs-mode 'emacs)
 
 ;; dirvish
-(unless (package-installed-p 'dirvish)
-  (package-install 'dirvish))
-(require 'dirvish)
+;; (unless (package-installed-p 'dirvish)
+;;   (package-install 'dirvish))
+;; (require 'dirvish)
 
 ;; ranger
 ;; (unless (package-installed-p 'ranger)
@@ -97,7 +103,9 @@
 ;; (load-theme 'base16-dracula t)
 ;; (load-theme 'base16-phd t)
 ;; (load-theme 'base16-default-dark t)
-(load-theme 'base16-monokai t)
+;; (load-theme 'base16-monokai t)
+;; (load-theme 'base16-material t)
+(load-theme 'base16-snazzy t)
 
 ;; ace-window
 ;; (unless (package-installed-p 'ace-window)
@@ -108,6 +116,13 @@
 (setq aw-dispatch-always 't)
 ;; (setq aw-ignore-current 't)
 (global-set-key (kbd "M-o") 'ace-window)
+
+;; auto-dim-other-buffers
+;; (unless (package-installed-p 'auto-dim-other-buffers)
+  ;; (package-install 'auto-dim-other-buffers))
+(add-hook 'after-init-hook (lambda ()
+  (when (fboundp 'auto-dim-other-buffers-mode)
+    (auto-dim-other-buffers-mode t))))
 
 ;; Start server mode
 (server-start)
