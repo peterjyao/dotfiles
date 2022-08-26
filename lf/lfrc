@@ -3,3 +3,4 @@ set ratios '1:2:2'
 map E %explorer.exe .
 map <delete> %recycle-bin %f%
 map <tab> toggle
+map Y $echo %f% | clip
