@@ -175,7 +175,7 @@
 
 ;; Persistent history
 (savehist-mode 1)
-(desktop-save-mode 1)
+;; (desktop-save-mode 1)
 
 ;; quarto-mode
 ;; (unless (package-installed-p 'quarto-mode)
