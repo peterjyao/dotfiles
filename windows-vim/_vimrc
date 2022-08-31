@@ -1,5 +1,6 @@
 language en_US
-set guifont=Cartograph\ CF:h10
+" set guifont=Cartograph\ CF:h9
+set guifont=Dank\ Mono:h10
 set number
 set ruler
 set hidden
@@ -7,6 +8,9 @@ set linebreak
 set clipboard^=unnamed
 command Root cd %:p:h:h
 command File cd %:p:h
+set nocompatible
+set showcmd
+filetype plugin on
 syntax on
 
 set visualbell
@@ -14,18 +18,31 @@ set vb t_vb=
 set laststatus=2
 set backspace=2
 
-:map <C-Tab> <C-W>w
-:tmap <C-Tab> <C-W>w
-:imap <C-w> <C-o><C-w>
+let mapleader=","
+map <C-Tab> <C-W>w
+tmap <C-Tab> <C-W>w
+imap <C-w> <C-o><C-w>
 
-:nnoremap <C-n> :bnext<CR>
-:nnoremap <C-p> :bprevious<CR>
-:tmap <C-n> <Esc>:bnext<CR>
-:tmap <C-p> <Esc>:bprevious<CR>
-:inoremap <C-n> <Esc>:bnext<CR>
-:inoremap <C-p> <Esc>:bprevious<CR>
+nnoremap q :q<CR>
 
-:tnoremap <Esc> <C-\><C-n>
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
+tmap <C-n> <Esc>:bnext<CR>
+tmap <C-p> <Esc>:bprevious<CR>
+inoremap <C-n> <Esc>:bnext<CR>
+inoremap <C-p> <Esc>:bprevious<CR>
+
+tnoremap <Esc> <C-\><C-n>
+
+nnoremap   <silent>   <F7>    :FloatermNew<CR>
+tnoremap   <silent>   <F7>    <C-\><C-n>:FloatermNew<CR>
+nnoremap   <silent>   <F8>    :FloatermPrev<CR>
+tnoremap   <silent>   <F8>    <C-\><C-n>:FloatermPrev<CR>
+nnoremap   <silent>   <F9>    :FloatermNext<CR>
+tnoremap   <silent>   <F9>    <C-\><C-n>:FloatermNext<CR>
+nnoremap   <silent>   <F12>   :FloatermToggle<CR>
+tnoremap   <silent>   <F12>   <C-\><C-n>:FloatermToggle<CR>
+vnoremap   <silent>   <C-c><C-c>    :'<,'>FloatermSend<CR>
 
 " colorscheme onedark
 " colorscheme Papercolor
@@ -39,7 +56,7 @@ command! Bd bp|bd #
 
 " let g:slime_target = "tmux"
 " let g:slime_default_config = {"socket_name": "default", "target_pane": "{last}"}
-let g:slime_target = "vimterminal"
+" let g:slime_target = "vimterminal"
 
 let g:diminactive_use_colorcolumn = 0
 let g:diminactive_use_syntax = 1

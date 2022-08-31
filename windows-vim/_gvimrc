@@ -11,6 +11,7 @@ set visualbell
 set vb t_vb=
 set laststatus=2
 set backspace=2
+set nowrap
 
 language en_US
 
