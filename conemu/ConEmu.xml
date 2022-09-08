@@ -8,7 +8,7 @@
 <key name="Software">
 	<key name="ConEmu">
 		<!-- Main configuration (/config argument is not specified) -->
-		<key name=".Vanilla" modified="2022-09-01 16:55:54" build="220807">
+		<key name=".Vanilla" modified="2022-09-08 21:07:58" build="220807">
 			<value name="SingleInstance" type="hex" data="00"/>
 			<value name="KeyboardHooks" type="hex" data="01"/>
 			<value name="UseInjects" type="hex" data="01"/>
@@ -28,22 +28,22 @@
 			<value name="StartFarFolders" type="hex" data="00"/>
 			<value name="StartFarEditors" type="hex" data="00"/>
 			<!-- Console colors -->
-			<value name="ColorTable00" type="dword" data="0040342e"/>
-			<value name="ColorTable01" type="dword" data="00ac815e"/>
-			<value name="ColorTable02" type="dword" data="008cbea3"/>
-			<value name="ColorTable03" type="dword" data="00bbbc8f"/>
-			<value name="ColorTable04" type="dword" data="007087d0"/>
-			<value name="ColorTable05" type="dword" data="00ad8eb4"/>
-			<value name="ColorTable06" type="dword" data="008bcbeb"/>
-			<value name="ColorTable07" type="dword" data="00e9ded8"/>
-			<value name="ColorTable08" type="dword" data="00f0e9e5"/>
-			<value name="ColorTable09" type="dword" data="00c1a181"/>
-			<value name="ColorTable10" type="dword" data="008cbea3"/>
-			<value name="ColorTable11" type="dword" data="00d0c088"/>
-			<value name="ColorTable12" type="dword" data="006a61bf"/>
-			<value name="ColorTable13" type="dword" data="00ad8eb4"/>
-			<value name="ColorTable14" type="dword" data="008bcbeb"/>
-			<value name="ColorTable15" type="dword" data="00f4efec"/>
+			<value name="ColorTable00" type="dword" data="00342c28"/>
+			<value name="ColorTable01" type="dword" data="0049413d"/>
+			<value name="ColorTable02" type="dword" data="0079c398"/>
+			<value name="ColorTable03" type="dword" data="0079c398"/>
+			<value name="ColorTable04" type="dword" data="004650be"/>
+			<value name="ColorTable05" type="dword" data="00dd78c6"/>
+			<value name="ColorTable06" type="dword" data="00669ad1"/>
+			<value name="ColorTable07" type="dword" data="00bfb2ab"/>
+			<value name="ColorTable08" type="dword" data="005791f9"/>
+			<value name="ColorTable09" type="dword" data="00efaf61"/>
+			<value name="ColorTable10" type="dword" data="0079c398"/>
+			<value name="ColorTable11" type="dword" data="00c2b656"/>
+			<value name="ColorTable12" type="dword" data="00756ce0"/>
+			<value name="ColorTable13" type="dword" data="007a77f2"/>
+			<value name="ColorTable14" type="dword" data="005791f9"/>
+			<value name="ColorTable15" type="dword" data="00939fa0"/>
 			<value name="ColorTable16" type="dword" data="00000000"/>
 			<value name="ColorTable17" type="dword" data="00800000"/>
 			<value name="ColorTable18" type="dword" data="00008000"/>
@@ -149,11 +149,11 @@
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
 			<value name="UseCurrentSizePos" type="hex" data="01"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd Width" type="dword" data="00000074"/>
-			<value name="ConWnd Height" type="dword" data="0000001d"/>
+			<value name="ConWnd Width" type="dword" data="00000068"/>
+			<value name="ConWnd Height" type="dword" data="00000016"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="long" data="858"/>
-			<value name="ConWnd Y" type="long" data="362"/>
+			<value name="ConWnd X" type="long" data="960"/>
+			<value name="ConWnd Y" type="long" data="515"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -287,7 +287,7 @@
 			<value name="StatusBar.Hide.Title" type="hex" data="01"/>
 			<value name="StatusBar.Hide.Time" type="hex" data="01"/>
 			<value name="StatusBar.Hide.Resize" type="hex" data="00"/>
-			<value name="Tabs" type="hex" data="01"/>
+			<value name="Tabs" type="hex" data="00"/>
 			<value name="TabsLocation" type="hex" data="01"/>
 			<value name="TabIcons" type="hex" data="01"/>
 			<value name="OneTabPerGroup" type="hex" data="00"/>
@@ -330,7 +330,7 @@
 			<value name="SkipFocusEvents" type="hex" data="00"/>
 			<value name="MonitorConsoleLang" type="hex" data="03"/>
 			<value name="DesktopMode" type="hex" data="00"/>
-			<value name="SnapToDesktopEdges" type="hex" data="00"/>
+			<value name="SnapToDesktopEdges" type="hex" data="01"/>
 			<value name="AlwaysOnTop" type="hex" data="00"/>
 			<value name="SleepInBackground" type="hex" data="01"/>
 			<value name="RetardInactivePanes" type="hex" data="00"/>
@@ -651,8 +651,8 @@
 			<key name="Apps" modified="2022-08-31 19:50:58" build="220807">
 				<value name="Count" type="long" data="0"/>
 			</key>
-			<key name="Colors" modified="2022-08-31 21:00:21" build="220807">
-				<value name="Count" type="long" data="1"/>
+			<key name="Colors" modified="2022-09-02 10:18:24" build="220807">
+				<value name="Count" type="long" data="3"/>
 				<key name="Palette1" modified="2022-08-31 21:00:21" build="220807">
 					<value name="Name" type="string" data="Default"/>
 					<value name="TextColorIdx" type="hex" data="10"/>
@@ -692,6 +692,52 @@
 					<value name="ColorTable15" type="dword" data="00f4efec"/>
 					<!-- White (Number, Git diff text) -->
 				</key>
+				<key name="Palette2" modified="2017-01-06 21:01:42" build="161206">
+					<value name="Name" type="string" data="One Dark"/>
+					<value name="TextColorIdx" type="hex" data="10"/>
+					<value name="BackColorIdx" type="hex" data="10"/>
+					<value name="PopTextColorIdx" type="hex" data="10"/>
+					<value name="PopBackColorIdx" type="hex" data="10"/>
+					<value name="ColorTable00" type="dword" data="00342c28"/>
+					<value name="ColorTable01" type="dword" data="0070635c"/>
+					<value name="ColorTable02" type="dword" data="0079c398"/>
+					<value name="ColorTable03" type="dword" data="0079c398"/>
+					<value name="ColorTable04" type="dword" data="004650be"/>
+					<value name="ColorTable05" type="dword" data="00dd78c6"/>
+					<value name="ColorTable06" type="dword" data="00669ad1"/>
+					<value name="ColorTable07" type="dword" data="00bfb2ab"/>
+					<value name="ColorTable08" type="dword" data="00697374"/>
+					<value name="ColorTable09" type="dword" data="00efaf61"/>
+					<value name="ColorTable10" type="dword" data="0079c398"/>
+					<value name="ColorTable11" type="dword" data="00c2b656"/>
+					<value name="ColorTable12" type="dword" data="00756ce0"/>
+					<value name="ColorTable13" type="dword" data="007a77f2"/>
+					<value name="ColorTable14" type="dword" data="005791f9"/>
+					<value name="ColorTable15" type="dword" data="00939fa0"/>
+				</key>
+				<key name="Palette3" modified="2022-09-05 11:59:09" build="220807">
+					<value name="Name" type="string" data="One Dark (edited)"/>
+					<value name="TextColorIdx" type="hex" data="10"/>
+					<value name="BackColorIdx" type="hex" data="10"/>
+					<value name="PopTextColorIdx" type="hex" data="10"/>
+					<value name="PopBackColorIdx" type="hex" data="10"/>
+					<value name="ColorTable00" type="dword" data="00342c28"/>
+					<value name="ColorTable01" type="dword" data="0049413d"/>
+					<value name="ColorTable02" type="dword" data="0079c398"/>
+					<value name="ColorTable03" type="dword" data="0079c398"/>
+					<value name="ColorTable04" type="dword" data="004650be"/>
+					<value name="ColorTable05" type="dword" data="00dd78c6"/>
+					<value name="ColorTable06" type="dword" data="00669ad1"/>
+					<value name="ColorTable07" type="dword" data="00bfb2ab"/>
+					<value name="ColorTable08" type="dword" data="005791f9"/>
+					<value name="ColorTable09" type="dword" data="00efaf61"/>
+					<value name="ColorTable10" type="dword" data="0079c398"/>
+					<value name="ColorTable11" type="dword" data="00c2b656"/>
+					<value name="ColorTable12" type="dword" data="00756ce0"/>
+					<value name="ColorTable13" type="dword" data="007a77f2"/>
+					<value name="ColorTable14" type="dword" data="005791f9"/>
+					<value name="ColorTable15" type="dword" data="00939fa0"/>
+				</key>
 			</key>
 			<value name="LastMonitor" type="string" data="0,0,1920,1030"/>
 			<value name="Language" type="string" data="en"/>
@@ -718,7 +764,7 @@
 			<value name="AutoReloadEnvironment" type="hex" data="01"/>
 			<value name="EnvironmentSet" type="multi">
 				<line data="set PATH=%ConEmuBaseDir%\Scripts;%PATH%"/>
-				<line data=" "/>
+				<line data="# chcp utf8"/>
 				<line data="# set ConEmuPromptNames=NO"/>
 				<line data="# set ConEmuPromptNL=NO"/>
 				<line data="# set ConEmuSudoSplit=NO"/>
