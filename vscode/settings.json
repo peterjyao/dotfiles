@@ -1,0 +1,15 @@
+{
+    "editor.fontFamily": "'Dank Mono', Consolas, 'Courier New', monospace",
+    "notebook.lineNumbers": "on",
+    "update.enableWindowsBackgroundUpdates": false,
+    "update.showReleaseNotes": false,
+    "update.mode": "none",
+    "editor.rulers": [80
+    
+    ],
+    "workbench.colorTheme": "Atom One Dark",
+    "quarto.mathjax.theme": "dark",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "jupyter.enableAutoMoveToNextCell": false,
+    "vim.useSystemClipboard": true
+}
