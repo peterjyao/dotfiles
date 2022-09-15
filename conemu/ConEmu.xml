@@ -8,7 +8,7 @@
 <key name="Software">
 	<key name="ConEmu">
 		<!-- Main configuration (/config argument is not specified) -->
-		<key name=".Vanilla" modified="2022-09-08 21:07:58" build="220807">
+		<key name=".Vanilla" modified="2022-09-15 09:07:25" build="220807">
 			<value name="SingleInstance" type="hex" data="00"/>
 			<value name="KeyboardHooks" type="hex" data="01"/>
 			<value name="UseInjects" type="hex" data="01"/>
@@ -36,7 +36,7 @@
 			<value name="ColorTable05" type="dword" data="00dd78c6"/>
 			<value name="ColorTable06" type="dword" data="00669ad1"/>
 			<value name="ColorTable07" type="dword" data="00bfb2ab"/>
-			<value name="ColorTable08" type="dword" data="005791f9"/>
+			<value name="ColorTable08" type="dword" data="00756ce0"/>
 			<value name="ColorTable09" type="dword" data="00efaf61"/>
 			<value name="ColorTable10" type="dword" data="0079c398"/>
 			<value name="ColorTable11" type="dword" data="00c2b656"/>
@@ -149,11 +149,11 @@
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
 			<value name="UseCurrentSizePos" type="hex" data="01"/>
 			<value name="WindowMode" type="dword" data="0000051f"/>
-			<value name="ConWnd Width" type="dword" data="00000068"/>
-			<value name="ConWnd Height" type="dword" data="00000016"/>
+			<value name="ConWnd Width" type="dword" data="00000086"/>
+			<value name="ConWnd Height" type="dword" data="0000001d"/>
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="ConWnd X" type="long" data="960"/>
-			<value name="ConWnd Y" type="long" data="515"/>
+			<value name="ConWnd Y" type="long" data="520"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -739,7 +739,7 @@
 					<value name="ColorTable15" type="dword" data="00939fa0"/>
 				</key>
 			</key>
-			<value name="LastMonitor" type="string" data="0,0,1920,1030"/>
+			<value name="LastMonitor" type="string" data="0,0,2560,1400"/>
 			<value name="Language" type="string" data="en"/>
 			<value name="StartCreateDelay" type="ulong" data="100"/>
 			<value name="ClipboardAllLinesPosix" type="hex" data="00"/>

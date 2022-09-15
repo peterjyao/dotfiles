@@ -11,5 +11,10 @@
     "quarto.mathjax.theme": "dark",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "jupyter.enableAutoMoveToNextCell": false,
-    "vim.useSystemClipboard": true
+    "vim.useSystemClipboard": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "breadcrumbs.enabled": false,
+    "editor.occurrencesHighlight": false,
+    "jupyter.experiments.enabled": false,
+    "editor.parameterHints.enabled": false
 }
