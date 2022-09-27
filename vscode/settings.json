@@ -16,5 +16,17 @@
     "breadcrumbs.enabled": false,
     "editor.occurrencesHighlight": false,
     "jupyter.experiments.enabled": false,
-    "editor.parameterHints.enabled": false
+    "editor.parameterHints.enabled": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "csv-edit.fontFamilyInTable": "sameAsCodeEditor",
+    "csv-edit.fontSizeInPx": 0,
+    "csv-edit.readOption_hasHeader": "true",
+    "csv-edit.initiallyIsInReadonlyMode": true,
+    "csv-edit.disableBorders": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "jupyter.generateSVGPlots": true,
+    "editor.fontSize": 13,
+    "gitlens.currentLine.enabled": false
 }

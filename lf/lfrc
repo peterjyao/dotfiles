@@ -5,3 +5,4 @@ map <delete> %recycle-bin %f%
 map <tab> toggle
 map Y $echo %f% | clip
 map p :paste;clear
+map C $code %f%

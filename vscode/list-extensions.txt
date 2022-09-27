@@ -1,0 +1,15 @@
+akamud.vscode-theme-onedark
+eamodio.gitlens
+janisdd.vscode-edit-csv
+mechatroner.rainbow-csv
+ms-python.black-formatter
+ms-python.python
+ms-python.vscode-pylance
+ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
+quarto.quarto
+teabyii.ayu
+tootone.org-mode
+vscodevim.vim
+zhuangtongfa.material-theme
