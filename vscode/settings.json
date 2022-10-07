@@ -7,7 +7,7 @@
     "editor.rulers": [80
     
     ],
-    "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorTheme": "GitHub Dark Dimmed",
     "quarto.mathjax.theme": "dark",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "jupyter.enableAutoMoveToNextCell": false,
@@ -26,7 +26,21 @@
     "csv-edit.initiallyIsInReadonlyMode": true,
     "csv-edit.disableBorders": true,
     "security.workspace.trust.untrustedFiles": "open",
+    "jupyter.themeMatplotlibPlots": true,
+    "jupyter.interactiveWindowMode": "perFile",
+    "editor.minimap.enabled": false,
     "jupyter.generateSVGPlots": true,
     "editor.fontSize": 13,
-    "gitlens.currentLine.enabled": false
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "remote.SSH.remotePlatform": {
+        "10.0.25.11": "linux",
+        "mmpdev": "linux"
+    },
+    "window.restoreWindows": "none",
+    "jupyter.askForKernelRestart": false,
+    "terminal.integrated.fontFamily": "Consolas",
+    "activeDocumentIndicator.opacity": 30,
+    "workbench.editor.closeEmptyGroups": false,
 }
