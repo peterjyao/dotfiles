@@ -1,0 +1,13 @@
+# theme = "catppuccin_frappe"
+# theme = "monokai_pro_machine"
+theme = "onedark"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "diagnostics"]
+center = ["file-name", "spinner"]
+right = ["selections", "file-type", "file-encoding", "position-percentage", "position"]
