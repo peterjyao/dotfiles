@@ -38,7 +38,7 @@ window:
 
   # Window decorations
   # Setting this to false will result in window without borders and title bar.
-  decorations: full
+  decorations: None
 
 # When true, bold text is drawn using the bright variant of colors.
 draw_bold_text_with_bright_colors: true
@@ -56,25 +56,25 @@ scrolling:
 font:
   # The normal (roman) font face to use.
   normal:
-    family: Cartograph CF
+    family: Dank Mono
     style: Regular
 
   # The bold font face
   bold:
-    family: Cartograph CF
+    family: Dank Mono
     style: Bold
 
   # The italic font face
   italic:
-    family: Cartograph CF
+    family: Dank Mono
     style: Regular Italic
 
   bold_italic:
-    family: Cartograph CF
+    family: Dank Mono
     style: Bold Italic
 
   # Point size of the font
-  size: 9.0
+  size: 10
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
@@ -92,7 +92,8 @@ font:
   # OS X only: use thin stroke font rendering. Thin strokes are suitable
   # for retina displays, but for non-retina you probably want this set to
   # false.
-  use_thin_strokes: true
+  # COMMENT OUT because of error (update from 0.8 to 0.11)
+  # use_thin_strokes: true
 
 debug:
   # Should display the render timer
@@ -545,7 +546,9 @@ bell:
   duration: 0
 
 # Background opacity
-background_opacity: 1.0
+# COMMENT OUT: variable name changed
+# background_opacity: 1.0
+window.opacity: 1.0
 
 # Mouse bindings
 #

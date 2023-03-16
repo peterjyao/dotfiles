@@ -5,3 +5,7 @@
 [user]
 	name = Yao Peter - Basel
 	email = peter.yao@lonza.com
+[init]
+	defaultBranch = main
+[core]
+	excludesfile = C:\\Users\\pyao1\\.gitignore_global

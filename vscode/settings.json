@@ -7,14 +7,13 @@
     "editor.rulers": [80
     
     ],
-    "workbench.colorTheme": "GitHub Dark Dimmed",
     "quarto.mathjax.theme": "dark",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "jupyter.enableAutoMoveToNextCell": false,
     "vim.useSystemClipboard": true,
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     "breadcrumbs.enabled": false,
-    "editor.occurrencesHighlight": false,
+    "editor.occurrencesHighlight": true,
     "jupyter.experiments.enabled": false,
     "editor.parameterHints.enabled": false,
     "[python]": {
@@ -26,11 +25,9 @@
     "csv-edit.initiallyIsInReadonlyMode": true,
     "csv-edit.disableBorders": true,
     "security.workspace.trust.untrustedFiles": "open",
-    "jupyter.themeMatplotlibPlots": true,
     "jupyter.interactiveWindowMode": "perFile",
     "editor.minimap.enabled": false,
     "jupyter.generateSVGPlots": true,
-    "editor.fontSize": 13,
     "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
     "gitlens.codeLens.enabled": false,
@@ -40,7 +37,137 @@
     },
     "window.restoreWindows": "none",
     "jupyter.askForKernelRestart": false,
-    "terminal.integrated.fontFamily": "Consolas",
     "activeDocumentIndicator.opacity": 30,
-    "workbench.editor.closeEmptyGroups": false,
+    "workbench.editor.closeEmptyGroups": true,
+    "workbench.editor.wrapTabs": true,
+    "mssql.connections": [
+        {
+            "server": "CHVMV02",
+            "database": "",
+            "authenticationType": "Integrated",
+            "password": "",
+            "encrypt": "Mandatory",
+            "trustServerCertificate": true
+        }
+    ],
+    "vscode-json-editor.theme": "dark",
+    "workbench.colorTheme": "Bluloco Dark Italic",
+    "dance.modes": {
+    
+        "": {
+            "hiddenSelectionsIndicatorsDecoration": {
+                "after": {
+                    "color": "$list.warningForeground"
+                },
+                "backgroundColor": "$inputValidation.warningBackground",
+                "borderColor": "$inputValidation.warningBorder",
+                "borderStyle": "solid",
+                "borderWidth": "1px",
+                "isWholeLine": true
+            }
+        },
+        "input": {
+            "cursorStyle": "underline-thin"
+        },
+        "insert": {
+            "onLeaveMode": [
+                [
+                    ".selections.save",
+                    {
+                        "register": " insert"
+                    }
+                ]
+            ]
+        },
+        "visual": {
+            "lineNumbers": "on",
+            "cursorStyle": "underline",
+            "selectionBehavior": "character",
+            "onEnterMode": [
+                [
+                    ".selections.restore",
+                    {
+                        "register": " ^",
+                        "try": true
+                    }
+                ]
+            ],
+            "onLeaveMode": [
+                [
+                    ".selections.save",
+                    {
+                        "register": " ^",
+                        "style": {
+                            "borderColor": "$editor.selectionBackground",
+                            "borderStyle": "solid",
+                            "borderWidth": "2px",
+                            "borderRadius": "1px"
+                        },
+                        "until": [
+                            [
+                                "mode-did-change",
+                                {
+                                    "include": "normal"
+                                }
+                            ],
+                            [
+                                "mode-did-change",
+                                {
+                                    "include": "visual"
+                                }
+                            ],
+                            [
+                                "selections-did-change"
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        },
+        "normal": {
+            "lineNumbers": "on",
+            "cursorStyle": "block",
+            "selectionBehavior": "character",
+            "onEnterMode": [
+                [
+                    ".selections.restore",
+                    {
+                        "register": " ^",
+                        "try": true
+                    }
+                ]
+            ],
+            "onLeaveMode": [
+                [
+                    ".selections.save",
+                    {
+                        "register": " ^",
+                        "style": {
+                            "borderColor": "$editor.selectionBackground",
+                            "borderStyle": "solid",
+                            "borderWidth": "2px",
+                            "borderRadius": "1px"
+                        },
+                        "until": [
+                            [
+                                "mode-did-change",
+                                {
+                                    "include": "normal"
+                                }
+                            ],
+                            [
+                                "mode-did-change",
+                                {
+                                    "include": "visual"
+                                }
+                            ],
+                            [
+                                "selections-did-change"
+                            ]
+                        ]
+                    }
+                ]
+            ]
+        }
+    }
 }
