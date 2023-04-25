@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2022-12-01 10:05:21" build="210912">
+		<key name=".Vanilla" modified="2023-03-29 14:09:46" build="221218">
 			<value name="ColorTable00" type="dword" data="0040342e"/>
 			<value name="ColorTable01" type="dword" data="00ac815e"/>
 			<value name="ColorTable02" type="dword" data="008cbea3"/>
@@ -127,8 +127,8 @@
 			<value name="ConWnd Width" type="dword" data="00000074"/>
 			<value name="ConWnd Height" type="dword" data="0000001d"/>
 			<value name="Cascaded" type="hex" data="01"/>
-			<value name="ConWnd X" type="long" data="1320"/>
-			<value name="ConWnd Y" type="long" data="740"/>
+			<value name="ConWnd X" type="long" data="1020"/>
+			<value name="ConWnd Y" type="long" data="561"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="AutoSaveSizePos" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
@@ -1085,7 +1085,7 @@
 			</key>
 			<value name="StartCreateDelay" type="ulong" data="100"/>
 			<value name="DefaultTerminalDebugLog" type="hex" data="00"/>
-			<value name="LastMonitor" type="string" data="0,0,2560,1400"/>
+			<value name="LastMonitor" type="string" data="0,0,1857,1080"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
 			<value name="DownShowExOnTopMessage" type="hex" data="00"/>
 			<value name="Update.InetTool" type="hex" data="00"/>
