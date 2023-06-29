@@ -1,8 +1,9 @@
-theme = "kanagawa"
+# theme = "kanagawa"
+theme = "catppuccin_latte"
 
 [editor]
 cursorline = true
-bufferline = "multiple"
+bufferline = "always"
 color-modes = true
 
 [editor.cursor-shape]
@@ -11,9 +12,11 @@ normal = "block"
 select = "underline"
 
 [editor.statusline]
-left = ["mode", "diagnostics"]
+# left = ["mode", "diagnostics"]
 center = ["file-name", "file-modification-indicator", "spinner"]
-right = ["version-control", "spacer", "spacer", "separator", "selections", "file-type", "file-encoding", "position-percentage", "position"]
+# right = ["version-control", "spacer", "spacer", "separator", "selections", "file-type", "file-encoding", "position-percentage", "position"]
+left = ["mode", "spacer", "diagnostics", "spacer", "version-control"]
+right = ["selections", "file-type", "file-encoding", "position-percentage", "position"]
 
 [editor.indent-guides]
 render = true

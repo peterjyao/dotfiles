@@ -180,5 +180,8 @@
         "terminalEditor": false
     },
     "editor.fontFamily": "'Dank Mono', Consolas, 'Courier New', monospace",
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools"
+    }
 }

@@ -1,7 +1,7 @@
 [http]
 	sslbackend = schannel
 [credential "helperselector"]
-	selected = wincred
+	selected = <no helper>
 [user]
 	name = Yao Peter - Basel
 	email = peter.yao@lonza.com
@@ -9,3 +9,4 @@
 	defaultBranch = main
 [core]
 	excludesfile = C:\\Users\\pyao1\\.gitignore_global
+	pager = 

@@ -8,6 +8,7 @@ BeardedBear.beardedtheme
 DaltonMenezes.aura-theme
 DavidAnson.vscode-markdownlint
 daylerees.rainglow
+DotJoshJohnson.xml
 dracula-theme.theme-dracula
 eamodio.gitlens
 EliverLara.andromeda
@@ -16,6 +17,7 @@ Equinusocio.vsc-community-material-theme
 Equinusocio.vsc-material-theme
 equinusocio.vsc-material-theme-icons
 eserozvataf.one-dark-pro-monokai-darker
+fabianlauer.vs-code-xml-format
 felipe-mendes.slack-theme
 fisheva.eva-theme
 foam.foam-vscode
@@ -24,6 +26,7 @@ GrapeCity.gc-excelviewer
 GulajavaMinistudio.mayukaithemevsc
 janisdd.vscode-edit-csv
 jdinhlife.gruvbox
+joe-re.sql-language-server
 johnpapa.vscode-peacock
 jprestidge.theme-material-theme
 kuscamara.electron
@@ -51,11 +54,13 @@ ms-vscode-remote.remote-wsl
 ms-vscode-remote.vscode-remote-extensionpack
 ms-vscode.remote-explorer
 ms-vscode.remote-server
+mtxr.sqltools
 mushan.vscode-paste-image
 NathanRidley.autotrim
 nickdemayo.vscode-json-editor
 Nimda.deepdark-material
 ojkwon.vscode-activedocumentindicator
+PrateekMahendrakar.prettyxml
 quarto.quarto
 qufiwefefwoyn.kanagawa
 rid9.datetime
