@@ -170,7 +170,7 @@
     "jupyter.interactiveWindow.creationMode": "perFile",
     "jupyter.interactiveWindow.textEditor.autoMoveToNextCell": false,
     "dateTime.customFormat": "\tYYYY-MM-DD > [Week] W > dddd > HH:mm:ss\t",
-    "workbench.colorTheme": "Kanagawa",
+    "workbench.colorTheme": "Sonokai",
     "dateTime.locale": "de-ch",
     "dateTime.timeZone": "Europe/Zurich",
     "dateTime.clipboardFormat": "",
@@ -179,9 +179,9 @@
     "workbench.editor.autoLockGroups": {
         "terminalEditor": false
     },
-    "editor.fontFamily": "'Dank Mono', Consolas, 'Courier New', monospace",
     "files.trimTrailingWhitespace": true,
     "[sql]": {
         "editor.defaultFormatter": "mtxr.sqltools"
-    }
+    },
+    "editor.fontFamily": "'Cascadia Mono', 'Dank Mono', Consolas, 'Courier New', monospace"
 }

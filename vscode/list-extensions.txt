@@ -65,6 +65,8 @@ quarto.quarto
 qufiwefefwoyn.kanagawa
 rid9.datetime
 RoscoP.ActiveFileInStatusBar
+rozbo.papercolor-vscode
+sainnhe.sonokai
 sdras.night-owl
 silverquark.dancehelix
 sldobri.bunker

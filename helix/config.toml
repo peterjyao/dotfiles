@@ -1,10 +1,20 @@
 # theme = "kanagawa"
-theme = "catppuccin_latte"
+# theme = "catppuccin_latte" 
+# theme = "solarized_light"
+# theme = "papercolor-light"
+# theme = "everforest_light"
+# theme = "bogster_light"
+# theme = "sonokai"
+# theme = "ayu_dark"
+# theme = "acme"
+theme = "gruvbox"
+
 
 [editor]
 cursorline = true
 bufferline = "always"
 color-modes = true
+idle-timeout = 0
 
 [editor.cursor-shape]
 insert = "bar"
@@ -19,7 +29,7 @@ left = ["mode", "spacer", "diagnostics", "spacer", "version-control"]
 right = ["selections", "file-type", "file-encoding", "position-percentage", "position"]
 
 [editor.indent-guides]
-render = true
+render = false
 
 [editor.lsp]
 display-messages = true
