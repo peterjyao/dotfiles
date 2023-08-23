@@ -175,7 +175,7 @@
     "dateTime.timeZone": "Europe/Zurich",
     "dateTime.clipboardFormat": "",
     "git.confirmSync": false,
-    "editor.fontWeight": "normal",
+    "editor.fontWeight": "350",
     "workbench.editor.autoLockGroups": {
         "terminalEditor": false
     },
@@ -183,5 +183,6 @@
     "[sql]": {
         "editor.defaultFormatter": "mtxr.sqltools"
     },
-    "editor.fontFamily": "'Cascadia Mono', 'Dank Mono', Consolas, 'Courier New', monospace"
+    "editor.fontFamily": " 'Cascadia Mono','Dank Mono', Consolas, 'Courier New', monospace",
+    "editor.fontSize": 13
 }

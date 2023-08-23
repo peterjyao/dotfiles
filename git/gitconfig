@@ -1,7 +1,5 @@
 [http]
 	sslbackend = schannel
-[credential "helperselector"]
-	selected = <no helper>
 [user]
 	name = Yao Peter - Basel
 	email = peter.yao@lonza.com
@@ -10,3 +8,5 @@
 [core]
 	excludesfile = C:\\Users\\pyao1\\.gitignore_global
 	pager = 
+[credential]
+	helper = manager

@@ -23,25 +23,26 @@ window:
     x: 500
     y: 200
 
+
   # Adds this many blank pixels of padding around the window
   # Units are physical pixels; this is not DPI aware.
   # (change requires restart)
   padding:
-    x: 2
-    y: 2
+    x: 5
+    y: 5
 
   # Spread additional padding evenly around the terminal content.
-  dynamic_padding: false
-
-  dynamic_title: true
+  dynamic_padding: false 
+  dynamic_title: false
 
 
   # Window decorations
   # Setting this to false will result in window without borders and title bar.
   decorations: None
+  startup_mode: Maximized
 
 # When true, bold text is drawn using the bright variant of colors.
-draw_bold_text_with_bright_colors: true
+draw_bold_text_with_bright_colors: false
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
@@ -56,21 +57,21 @@ scrolling:
 font:
   # The normal (roman) font face to use.
   normal:
-    family: Dank Mono
+    family: Cousine for Powerline
     style: Regular
 
   # The bold font face
   bold:
-    family: Dank Mono
+    family: Cousine for Powerline
     style: Bold
 
   # The italic font face
   italic:
-    family: Dank Mono
+    family: Cousine for Powerline
     style: Regular Italic
 
   bold_italic:
-    family: Dank Mono
+    family: Cousine for Powerline
     style: Bold Italic
 
   # Point size of the font
@@ -98,426 +99,6 @@ font:
 debug:
   # Should display the render timer
   render_timer: false
-
-# Colors (Ayu Dark)
-# colors:
-#   primary:
-#     background: '0x0f1419'
-#     foreground: '0xe6e1cf'
-#
-#   normal:
-#     black:   '0x000000'
-#     red:     '0xf34a4a'
-#     green:   '0xbae67e'
-#     yellow:  '0xffee99'
-#     blue:    '0x73d0ff'
-#     magenta: '0xd4bfff'
-#     cyan:    '0x83CEC6'
-#     white:   '0xf2f2f2'
-#
-#   bright:
-#     black:   '0x737d87'
-#     red:     '0xff3333'
-#     green:   '0xc2d94c'
-#     yellow:  '0xe7c547'
-#     blue:    '0x59c2ff'
-#     magenta: '0xb77ee0'
-#     cyan:    '0x5ccfe6'
-#     white:   '0xffffff'
-
-# Colors (One Dark)
-# colors:
-#   primary:
-#     background: '0x1e2127'
-#     foreground: '0xabb2bf'
-#
-#   normal:
-#     black:   '0x1e2127'
-#     red:     '0xe06c75'
-#     green:   '0x98c379'
-#     yellow:  '0xd19a66'
-#     blue:    '0x61afef'
-#     magenta: '0xc678dd'
-#     cyan:    '0x56b6c2'
-#     white:   '0xabb2bf'
-#
-#   bright:
-#     black:   '0x5c6370'
-#     red:     '0xe06c75'
-#     green:   '0x98c379'
-#     yellow:  '0xd19a66'
-#     blue:    '0x61afef'
-#     magenta: '0xc678dd'
-#     cyan:    '0x56b6c2'
-#     white:   '0xffffff'
-#
-#   dim:
-#     black:   '0x1e2127'
-#     red:     '0xe06c75'
-#     green:   '0x98c379'
-#     yellow:  '0xd19a66'
-#     blue:    '0x61afef'
-#     magenta: '0xc678dd'
-#     cyan:    '0x56b6c2'
-#     white:   '0x828791'
-
-# Colors (Konsole's Dark Pastels)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x2C2C2C'
-#     foreground: '0xDCDCCC'
-#   # Normal colors
-#   normal:
-#     black:   '0x3F3F3F'
-#     red:     '0x705050'
-#     green:   '0x60B48A'
-#     yellow:  '0xDFAF8F'
-#     blue:    '0x9AB8D7'
-#     magenta: '0xDC8CC3'
-#     cyan:    '0x8CD0D3'
-#     white:   '0xDCDCCC'
-#   # Bright colors
-#   bright:
-#     black:   '0x709080'
-#     red:     '0xDCA3A3'
-#     green:   '0x72D5A3'
-#     yellow:  '0xF0DFAF'
-#     blue:    '0x94BFF3'
-#     magenta: '0xEC93D3'
-#     cyan:    '0x93E0E3'
-#     white:   '0xFFFFFF'
-
-# Colors (Tokyo Night: Storm variant)
-# Source: https://github.com/zatchheems/tokyo-night-alacritty-theme
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x24283b'
-#     foreground: '0xa9b1d6'
-
-#   # Normal colors
-#   normal:
-#     black:   '0x32344a'
-#     red:     '0xf7768e'
-#     green:   '0x9ece6a'
-#     yellow:  '0xe0af68'
-#     blue:    '0x7aa2f7'
-#     magenta: '0xad8ee6'
-#     cyan:    '0x449dab'
-#     white:   '0x9699a8'
-#   # Bright colors
-#   bright:
-#     black:   '0x444b6a'
-#     red:     '0xff7a93'
-#     green:   '0xb9f27c'
-#     yellow:  '0xff9e64'
-#     blue:    '0x7da6ff'
-#     magenta: '0xbb9af7'
-#     cyan:    '0x0db9d7'
-#     white:   '0xacb0d0'
-
-# Colors (Tokyo Night)
-# Source: https://github.com/zatchheems/tokyo-night-alacritty-theme
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x1a1b26'
-#     foreground: '0xa9b1d6'
-#   # Normal colors
-#   normal:
-#     black:   '0x32344a'
-#     red:     '0xf7768e'
-#     green:   '0x9ece6a'
-#     yellow:  '0xe0af68'
-#     blue:    '0x7aa2f7'
-#     magenta: '0xad8ee6'
-#     cyan:    '0x449dab'
-#     white:   '0x787c99'
-#   # Bright colors
-#   bright:
-#     black:   '0x444b6a'
-#     red:     '0xff7a93'
-#     green:   '0xb9f27c'
-#     yellow:  '0xff9e64'
-#     blue:    '0x7da6ff'
-#     magenta: '0xbb9af7'
-#     cyan:    '0x0db9d7'
-#     white:   '0xacb0d0'
-
-# Remedy Dark
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x2c2b2a'
-#     foreground: '0xf9e7c4'
-#
-#     dim_foreground:    '0x685E4A'
-#     bright_foreground: '0x1C1508'
-#     dim_background:    '0x202322'
-#     bright_background: '0x353433'
-#
-#   # Cursor colors
-#   cursor:
-#     text:   '0xf9e7c4'
-#     cursor: '0xf9e7c4'
-#
-#   # Normal colors
-#   normal:
-#     black:   '0x282a2e'
-#     blue:    '0x5f819d'
-#     cyan:    '0x5e8d87'
-#     green:   '0x8c9440'
-#     magenta: '0x85678f'
-#     orange:  '0xcc6953'
-#     red:     '0xa54242'
-#     white:   '0x707880'
-#     yellow:  '0xde935f'
-#   # Bright colors
-#   bright:
-#     black:   '0x373b41'
-#     blue:    '0x81a2be'
-#     cyan:    '0x8abeb7'
-#     green:   '0xb5bd68'
-#     magenta: '0xb294bb'
-#     red:     '0xcc6666'
-#     white:   '0xc5c8c6'
-#     yellow:  '0xf0c674'
-
-# The Lovelace
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x1D1F28'
-#     foreground: '0xFDFDFD'
-#   # Normal colors
-#   normal:
-#   # Bright colors
-#     black:   '0x282A36'
-#     red:     '0xF37F97'
-#     green:   '0x5ADECD'
-#     yellow:  '0xF2A272'
-#     blue:    '0x8897F4'
-#     magenta: '0xC574DD'
-#     cyan:    '0x79E6F3'
-#     white:   '0xFDFDFD'
-#   bright:
-#     black:   '0x414458'
-#     red:     '0xFF4971'
-#     green:   '0x18E3C8'
-#     yellow:  '0xEBCB8B'
-#     blue:    '0xFF8037'
-#     magenta: '0x556FFF'
-#     cyan:    '0x3FDCEE'
-#     white:   '0xBEBEC1'
-#   indexed_colors: []
-
-# iTerm2 Material Design - Palenight theme for Alacritty
-# Source : https://github.com/JonathanSpeek/palenight-iterm2
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x292d3e'
-#     foreground: '0xd0d0d0'
-#   # Normal colors
-#   normal:
-#     black:   '0x292d3e'
-#     red:     '0xf07178'
-#     green:   '0xc3e88d'
-#     yellow:  '0xffcb6b'
-#     blue:    '0x82aaff'
-#     magenta: '0xc792ea'
-#     cyan:    '0x89ddff'
-#     white:   '0xd0d0d0'
-#   # Bright colors
-#   bright:
-#     black:   '0x434758'
-#     red:     '0xff8b92'
-#     green:   '0xddffa7'
-#     yellow:  '0xffe585'
-#     blue:    '0x9cc4ff'
-#     magenta: '0xe1acff'
-#     cyan:    '0xa3f7ff'
-#     white:   '0xffffff'
-
-# Colors (Nord)
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x2E3440'
-#     foreground: '0xD8DEE9'
-#   # Normal colors
-#   normal:
-#     black:   '0x3B4252'
-#     red:     '0xBF616A'
-#     green:   '0xA3BE8C'
-#     yellow:  '0xEBCB8B'
-#     blue:    '0x81A1C1'
-#     magenta: '0xB48EAD'
-#     cyan:    '0x88C0D0'
-#     white:   '0xE5E9F0'
-#   # Bright colors
-#   bright:
-#     black:   '0x4C566A'
-#     red:     '0xBF616A'
-#     green:   '0xA3BE8C'
-#     yellow:  '0xEBCB8B'
-#     blue:    '0x81A1C1'
-#     magenta: '0xB48EAD'
-#     cyan:    '0x8FBCBB'
-#     white:   '0xECEFF4'
-
-# Colors (Horizon Dark)
-# colors:
-#   # Primary colors
-#   primary:
-#     background: '0x1c1e26'
-#     foreground: '0xe0e0e0'
-#
-#   # Normal colors
-#   normal:
-#     black: '0x16161c'
-#     red: '0xe95678'
-#     green: '0x29d398'
-#     yellow: '0xfab795'
-#     blue: '0x26bbd9'
-#     magenta: '0xee64ac'
-#     cyan: '0x59e1e3'
-#     white: '0xd5d8da'
-#   # Bright colors
-#   bright:
-#     black: '0x5b5858'
-#     red: '0xec6a88'
-#     green: '0x3fdaa4'
-#     yellow: '0xfbc3a7'
-#     blue: '0x3fc4de'
-#     magenta: '0xf075b5'
-#     cyan: '0x6be4e6'
-#     white: '0xd5d8da'
-
-  
-# Colors (Gruvbox Material Dark Medium)
-# colors:
-#   primary:
-#     background: '0x282828'
-#     foreground: '0xdfbf8e'
-#   normal:
-#     black:   '0x665c54'
-#     red:     '0xea6962'
-#     green:   '0xa9b665'
-#     yellow:  '0xe78a4e'
-#     blue:    '0x7daea3'
-#     magenta: '0xd3869b'
-#     cyan:    '0x89b482'
-#     white:   '0xdfbf8e'
-#   bright:
-#     black:   '0x928374'
-#     red:     '0xea6962'
-#     green:   '0xa9b665'
-#     yellow:  '0xe3a84e'
-#     blue:    '0x7daea3'
-#     magenta: '0xd3869b'
-#     cyan:    '0x89b482'
-#     white:   '0xdfbf8e'
-
-  
-# Colors (Gruvbox dark)
-# colors:
-#   # Default colors
-#   primary:
-#     # hard contrast: background = '0x1d2021'
-#     background: '0x282828'
-#     # soft contrast: background = '0x32302f'
-#     foreground: '0xebdbb2'
-#   # Normal colors
-#   normal:
-#     black:   '0x282828'
-#     red:     '0xcc241d'
-#     green:   '0x98971a'
-#     yellow:  '0xd79921'
-#     blue:    '0x458588'
-#     magenta: '0xb16286'
-#     cyan:    '0x689d6a'
-#     white:   '0xa89984'
-#   # Bright colors
-#   bright:
-#     black:   '0x928374'
-#     red:     '0xfb4934'
-#     green:   '0xb8bb26'
-#     yellow:  '0xfabd2f'
-#     blue:    '0x83a598'
-#     magenta: '0xd3869b'
-#     cyan:    '0x8ec07c'
-#     white:   '0xebdbb2'
-
-# Flat remix
-# colors:
-#   primary:
-#     background: '0x272a34'
-#     foreground: '0xFFFFFF'
-#   normal:
-#     black:   '0x1F2229'
-#     red:     '0xEC0101'
-#     green:   '0x47D4B9'
-#     yellow:  '0xFF8A18'
-#     blue:    '0x277FFF'
-#     magenta: '0xD71655'
-#     cyan:    '0x05A1F7'
-#     white:   '0xFFFFFF'
-#   bright:
-#     black:   '0x1F2229'
-#     red:     '0xD41919'
-#     green:   '0x5EBDAB'
-#     yellow:  '0xFEA44C'
-#     blue:    '0x367bf0'
-#     magenta: '0xBF2E5D'
-#     cyan:    '0x49AEE6'
-#     white:   '0xFFFFFF'
-
-# Afterglow
-# colors:
-#   # Default colors
-#   primary:
-#     background: '0x2c2c2c'
-#     foreground: '0xd6d6d6'
-#     dim_foreground:    '0xdbdbdb'
-#     bright_foreground: '0xd9d9d9'
-#     dim_background:    '0x202020' # not sure
-#     bright_background: '0x3a3a3a' # not sure
-#   # Cursor colors
-#   cursor:
-#     text:   '0x2c2c2c'
-#     cursor: '0xd9d9d9'
-#   # Normal colors
-#   normal:
-#     black:   '0x1c1c1c'
-#     red:     '0xbc5653'
-#     green:   '0x909d63'
-#     yellow:  '0xebc17a'
-#     blue:    '0x7eaac7'
-#     magenta: '0xaa6292'
-#     cyan:    '0x86d3ce'
-#     white:   '0xcacaca'
-#   # Bright colors
-#   bright:
-#     black:   '0x636363'
-#     red:     '0xbc5653'
-#     green:   '0x909d63'
-#     yellow:  '0xebc17a'
-#     blue:    '0x7eaac7'
-#     magenta: '0xaa6292'
-#     cyan:    '0x86d3ce'
-#     white:   '0xf7f7f7'
-#   # Dim colors
-#   dim:
-#     black:   '0x232323'
-#     red:     '0x74423f'
-#     green:   '0x5e6547'
-#     yellow:  '0x8b7653'
-#     blue:    '0x556b79'
-#     magenta: '0x6e4962'
-#     cyan:    '0x5c8482'
-#     white:   '0x828282'
 
 # Visual Bell
 #
@@ -566,7 +147,7 @@ window.opacity: 1.0
 # - PasteSelection
 # - Copy (TODO)
 mouse_bindings:
-  - { mouse: Middle, action: PasteSelection }
+  - { mouse: Right, action: PasteSelection }
 
 mouse:
   # Click settings
@@ -608,7 +189,7 @@ cursor:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  style: Block
+  style: Beam
   unfocused_hollow: false
 
 # Live config reload (changes require restart)
@@ -708,45 +289,29 @@ hints:
        key: U
        mods: Control|Shift
 
-# Base16 Spacemacs 256 - alacritty color config
-# Nasser Alshammari (https://github.com/nashamri/spacemacs-theme)
+# Sonokai
 colors:
-  # Default colors
   primary:
-    background: '0x1f2022'
-    foreground: '0xa3a3a3'
+    background: "0x2c2e34"
+    foreground: "0xe2e2e3"
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x1f2022'
-    cursor: '0xa3a3a3'
-
-  # Normal colors
   normal:
-    black:   '0x1f2022'
-    red:     '0xf2241f'
-    green:   '0x67b11d'
-    yellow:  '0xb1951d'
-    blue:    '0x4f97d7'
-    magenta: '0xa31db1'
-    cyan:    '0x2d9574'
-    white:   '0xa3a3a3'
+    black: "0x181819"
+    red: "0xfc5d7c"
+    green: "0x9ed072"
+    yellow: "0xe7c664"
+    blue: "0x76cce0"
+    magenta: "0xb39df3"
+    cyan: "0xf39660"
+    white: "0xe2e2e3"
 
-  # Bright colors
   bright:
-    black:   '0x585858'
-    red:     '0xf2241f'
-    green:   '0x67b11d'
-    yellow:  '0xb1951d'
-    blue:    '0x4f97d7'
-    magenta: '0xa31db1'
-    cyan:    '0x2d9574'
-    white:   '0xf8f8f8'
-
-  indexed_colors:
-    - { index: 16, color: '0xffa500' }
-    - { index: 17, color: '0xb03060' }
-    - { index: 18, color: '0x282828' }
-    - { index: 19, color: '0x444155' }
-    - { index: 20, color: '0xb8b8b8' }
-    - { index: 21, color: '0xe8e8e8' }
+    black: "0x7f8490"
+    red: "0xfc5d7c"
+    green: "0x9ed072"
+    yellow: "0xe7c664"
+    blue: "0x76cce0"
+    magenta: "0xb39df3"
+    cyan: "0xf39660"
+    # white: "0x505050"
+    white: "0xe2e2e3"

@@ -15,3 +15,4 @@ map <tab> toggle
 map Y $set filepathwithquotes=%fx% && echo %filepathwithquotes:~1,-2% | clip
 map p :paste;clear
 map C $code %fx%
+set cursorpreviewfmt ""
