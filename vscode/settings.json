@@ -3,8 +3,8 @@
     "update.enableWindowsBackgroundUpdates": false,
     "update.showReleaseNotes": false,
     "update.mode": "none",
-    "editor.rulers": [80
-
+    "editor.rulers": [
+        88
     ],
     "quarto.mathjax.theme": "dark",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -36,7 +36,6 @@
     "jupyter.askForKernelRestart": false,
     "activeDocumentIndicator.opacity": 30,
     "workbench.editor.closeEmptyGroups": false,
-    "workbench.editor.wrapTabs": true,
     "mssql.connections": [
         {
             "server": "CHVMV02",
@@ -170,12 +169,10 @@
     "jupyter.interactiveWindow.creationMode": "perFile",
     "jupyter.interactiveWindow.textEditor.autoMoveToNextCell": false,
     "dateTime.customFormat": "\tYYYY-MM-DD > [Week] W > dddd > HH:mm:ss\t",
-    "workbench.colorTheme": "Sonokai",
     "dateTime.locale": "de-ch",
     "dateTime.timeZone": "Europe/Zurich",
     "dateTime.clipboardFormat": "",
     "git.confirmSync": false,
-    "editor.fontWeight": "350",
     "workbench.editor.autoLockGroups": {
         "terminalEditor": false
     },
@@ -183,6 +180,16 @@
     "[sql]": {
         "editor.defaultFormatter": "mtxr.sqltools"
     },
-    "editor.fontFamily": " 'Cascadia Mono','Dank Mono', Consolas, 'Courier New', monospace",
-    "editor.fontSize": 13
+    "editor.fontFamily": "'Dank Mono','Cascadia Mono','Inconsolata','Fira Mono', Consolas, 'Courier New', monospace",
+    "autoDocstring.docstringFormat": "numpy",
+    "editor.bracketPairColorization.enabled": false,
+    "terminal.integrated.cursorBlinking": true,
+    "editor.fontLigatures": false,
+    "editor.fontWeight": 350,
+    "editor.fontVariations": false,
+    "terminal.integrated.fontWeight": 350,
+    "editor.scrollbar.vertical": "hidden",
+    "editor.scrollbar.horizontal": "hidden",
+    "window.zoomLevel": 0.5,
+    "workbench.colorTheme": "Monochrome Dark Cool Gray"
 }
