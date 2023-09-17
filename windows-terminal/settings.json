@@ -157,11 +157,11 @@
         {
             "adjustIndistinguishableColors": "indexed",
             "closeOnExit": "graceful",
-            "colorScheme": "Sonokai-monochrome",
+            "colorScheme": "Kanagawa-monochrome",
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "Cousine for Powerline",
+                "face": "Fira Code",
                 "size": 10.0,
                 "weight": "normal"
             },
@@ -556,6 +556,29 @@
             "yellow": "#E5C283"
         },
         {
+            "background": "#1F1F28",
+            "black": "#1F1F28",
+            "blue": "#7EB3C9",
+            "brightBlack": "#49473E",
+            "brightBlue": "#DDD8BB",
+            "brightCyan": "#7EB3C9",
+            "brightGreen": "#DDD8BB",
+            "brightPurple": "#DDD8BB",
+            "brightRed": "#DDD8BB",
+            "brightWhite": "#E5C283",
+            "brightYellow": "#DDD8BB",
+            "cursorColor": "#E6E0C2",
+            "cyan": "#7EB3C9",
+            "foreground": "#999481",
+            "green": "#98BC6D",
+            "name": "Kanagawa-monochrome",
+            "purple": "#957FB8",
+            "red": "#E46A78",
+            "selectionBackground": "#49473E",
+            "white": "#DDD8BB",
+            "yellow": "#E5C283"
+        },
+        {
             "background": "#1B1D1E",
             "black": "#121212",
             "blue": "#1080D0",
@@ -593,10 +616,10 @@
             "cursorColor": "#D9D9D9",
             "cyan": "#D9D9D9",
             "foreground": "#8C8C8C",
-            "green": "#9ED072",
+            "green": "#D9D9D9",
             "name": "Monochrome",
             "purple": "#D9D9D9",
-            "red": "#FC5D7C",
+            "red": "#D9D9D9",
             "selectionBackground": "#333333",
             "white": "#808080",
             "yellow": "#D9D9D9"
@@ -837,7 +860,7 @@
             "blue": "#76CCE0",
             "brightBlack": "#7F7F80",
             "brightBlue": "#E2E2E3",
-            "brightCyan": "#F39660",
+            "brightCyan": "#E2E2E3",
             "brightGreen": "#E2E2E3",
             "brightPurple": "#E2E2E3",
             "brightRed": "#E2E2E3",
