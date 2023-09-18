@@ -161,9 +161,9 @@
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "Fira Code",
+                "face": "Cascadia Code",
                 "size": 10.0,
-                "weight": "normal"
+                "weight": "semi-light"
             },
             "intenseTextStyle": "bright",
             "scrollbarState": "hidden",
@@ -558,24 +558,24 @@
         {
             "background": "#1F1F28",
             "black": "#1F1F28",
-            "blue": "#7EB3C9",
+            "blue": "#7E9CD8",
             "brightBlack": "#49473E",
             "brightBlue": "#DDD8BB",
-            "brightCyan": "#7EB3C9",
+            "brightCyan": "#7E9CD8",
             "brightGreen": "#DDD8BB",
             "brightPurple": "#DDD8BB",
             "brightRed": "#DDD8BB",
-            "brightWhite": "#E5C283",
+            "brightWhite": "#7E9CD8",
             "brightYellow": "#DDD8BB",
             "cursorColor": "#E6E0C2",
-            "cyan": "#7EB3C9",
+            "cyan": "#7E9CD8",
             "foreground": "#999481",
             "green": "#98BC6D",
             "name": "Kanagawa-monochrome",
             "purple": "#957FB8",
             "red": "#E46A78",
             "selectionBackground": "#49473E",
-            "white": "#DDD8BB",
+            "white": "#807B6C",
             "yellow": "#E5C283"
         },
         {
