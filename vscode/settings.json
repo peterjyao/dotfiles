@@ -3,9 +3,7 @@
     "update.enableWindowsBackgroundUpdates": false,
     "update.showReleaseNotes": false,
     "update.mode": "none",
-    "editor.rulers": [
-        88
-    ],
+    "editor.rulers": [],
     "quarto.mathjax.theme": "dark",
     "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "vim.useSystemClipboard": true,
@@ -180,16 +178,19 @@
     "[sql]": {
         "editor.defaultFormatter": "mtxr.sqltools"
     },
-    "editor.fontFamily": "'Dank Mono','Cascadia Mono','Inconsolata','Fira Mono', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'M PLUS CODE Latin 50','Dank Mono','Cascadia Mono','Inconsolata','Fira Mono', Consolas, 'Courier New', monospace",
     "autoDocstring.docstringFormat": "numpy",
     "editor.bracketPairColorization.enabled": false,
     "terminal.integrated.cursorBlinking": true,
     "editor.fontLigatures": false,
-    "editor.fontWeight": 350,
+    "editor.fontWeight": 400,
     "editor.fontVariations": false,
-    "terminal.integrated.fontWeight": 350,
+    "terminal.integrated.fontWeight": 400,
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
     "window.zoomLevel": 0.5,
-    "workbench.colorTheme": "Kanagawa"
+    "workbench.colorTheme": "Monochrome Light Amplified",
+    "terminal.integrated.fontSize": 13,
+    "editor.fontSize": 13,
+    "fonted.font": "M PLUS CODE Latin 50",
 }

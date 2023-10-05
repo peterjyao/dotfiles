@@ -120,6 +120,14 @@
             "keys": "ctrl+tab"
         },
         {
+            "command": 
+            {
+                "action": "clearBuffer",
+                "clear": "all"
+            },
+            "keys": "alt+c"
+        },
+        {
             "command": "toggleFocusMode",
             "keys": "shift+f11"
         },
@@ -129,14 +137,6 @@
                 "action": "moveFocus",
                 "direction": "nextInOrder"
             }
-        },
-        {
-            "command": 
-            {
-                "action": "clearBuffer",
-                "clear": "all"
-            },
-            "keys": "alt+c"
         },
         {
             "command": "toggleFullscreen",
@@ -151,19 +151,26 @@
     "initialCols": 140,
     "initialRows": 30,
     "launchMode": "maximizedFocus",
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
         {
-            "adjustIndistinguishableColors": "indexed",
+            "adjustIndistinguishableColors": "always",
             "closeOnExit": "graceful",
             "colorScheme": "Kanagawa-monochrome",
+            "cursorShape": "filledBox",
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "Cascadia Code",
+                "face": "Dank Mono",
                 "size": 10.0,
-                "weight": "semi-light"
+                "weight": "normal"
             },
             "intenseTextStyle": "bright",
             "scrollbarState": "hidden",
@@ -205,6 +212,20 @@
                 "padding": "8, 8, 8, 8",
                 "snapOnInput": true,
                 "useAcrylic": false
+            },
+            {
+                "colorScheme": "Bogster Light Monochrome",
+                "commandline": "C:\\WINDOWS\\system32\\wsl.exe -d Ubuntu",
+                "font": 
+                {
+                    "size": 10.0
+                },
+                "guid": "{f169382a-e90c-40d0-831d-1bee7daca694}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+                "name": "Ubuntu Light",
+                "startingDirectory": "\\\\wsl.localhost\\Ubuntu\\home\\pyao",
+                "tabTitle": "WSL"
             }
         ]
     },
@@ -347,6 +368,29 @@
             "selectionBackground": "#D7DBBB",
             "white": "#ABB2BF",
             "yellow": "#A58023"
+        },
+        {
+            "background": "#F6FBD6",
+            "black": "#F6FBD6",
+            "blue": "#289CBC",
+            "brightBlack": "#ABB2BF",
+            "brightBlue": "#161C23",
+            "brightCyan": "#59C0DC",
+            "brightGreen": "#161C23",
+            "brightPurple": "#161C23",
+            "brightRed": "#161C23",
+            "brightWhite": "#289CBC",
+            "brightYellow": "#161C23",
+            "cursorColor": "#D32C5D",
+            "cyan": "#59C0DC",
+            "foreground": "#161C23",
+            "green": "#23A580",
+            "name": "Bogster Light Monochrome",
+            "purple": "#DC7759",
+            "red": "#D32C5D",
+            "selectionBackground": "#F6FBD6",
+            "white": "#171421",
+            "yellow": "#161C23"
         },
         {
             "background": "#0C0C0C",
@@ -559,24 +603,47 @@
             "background": "#1F1F28",
             "black": "#1F1F28",
             "blue": "#7E9CD8",
-            "brightBlack": "#49473E",
-            "brightBlue": "#DDD8BB",
+            "brightBlack": "#2A2A37",
+            "brightBlue": "#7FB4CA",
+            "brightCyan": "#FFA066",
+            "brightGreen": "#98BB6C",
+            "brightPurple": "#9CABCA",
+            "brightRed": "#E46876",
+            "brightWhite": "#C7CCD1",
+            "brightYellow": "#E6C384",
+            "cursorColor": "#223249",
+            "cyan": "#FFA066",
+            "foreground": "#DCD7BA",
+            "green": "#76946A",
+            "name": "Kanagawa-helix",
+            "purple": "#957FB8",
+            "red": "#C34043",
+            "selectionBackground": "#2D4F67",
+            "white": "#DCD7BA",
+            "yellow": "#DCA561"
+        },
+        {
+            "background": "#1F1F28",
+            "black": "#1F1F28",
+            "blue": "#7E9CD8",
+            "brightBlack": "#4A483F",
+            "brightBlue": "#DCD7BA",
             "brightCyan": "#7E9CD8",
-            "brightGreen": "#DDD8BB",
-            "brightPurple": "#DDD8BB",
-            "brightRed": "#DDD8BB",
-            "brightWhite": "#7E9CD8",
-            "brightYellow": "#DDD8BB",
-            "cursorColor": "#E6E0C2",
-            "cyan": "#7E9CD8",
-            "foreground": "#999481",
-            "green": "#98BC6D",
+            "brightGreen": "#DCD7BA",
+            "brightPurple": "#DCD7BA",
+            "brightRed": "#DCD7BA",
+            "brightWhite": "#FFA066",
+            "brightYellow": "#DCD7BA",
+            "cursorColor": "#DCD7BA",
+            "cyan": "#FFA066",
+            "foreground": "#DCD7BA",
+            "green": "#76946A",
             "name": "Kanagawa-monochrome",
             "purple": "#957FB8",
-            "red": "#E46A78",
-            "selectionBackground": "#49473E",
-            "white": "#807B6C",
-            "yellow": "#E5C283"
+            "red": "#C34043",
+            "selectionBackground": "#4A483F",
+            "white": "#DCD7BA",
+            "yellow": "#DCD7BA"
         },
         {
             "background": "#1B1D1E",
@@ -975,6 +1042,50 @@
     "tabSwitcherMode": "disabled",
     "tabWidthMode": "equal",
     "theme": "system",
-    "themes": [],
+    "themes": 
+    [
+        {
+            "name": "legacyDark",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "dark",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacyLight",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "light",
+                "useMica": false
+            }
+        },
+        {
+            "name": "legacySystem",
+            "tab": 
+            {
+                "background": null,
+                "showCloseButton": "always",
+                "unfocusedBackground": null
+            },
+            "window": 
+            {
+                "applicationTheme": "system",
+                "useMica": false
+            }
+        }
+    ],
     "useAcrylicInTabRow": true
 }

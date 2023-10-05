@@ -10,8 +10,8 @@
 # theme = "papercolor-light"
 # theme = "solarized_light"
 # theme = "solarized_dark"
-theme = "sonokai"
-
+# theme = "sonokai"
+theme = "base16_terminal"
 
 [editor]
 cursorline = true

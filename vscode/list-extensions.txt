@@ -1,6 +1,7 @@
 0xdhrv.blac
 AdamCaviness.theme-monokai-dark-soda
 akamud.vscode-theme-onedark
+alexandernanberg.horizon-theme-vscode
 anotherglitchinthematrix.monochrome
 arthurwhite.white
 azemoh.one-monokai
@@ -8,10 +9,14 @@ azemoh.theme-onedark
 bceskavich.theme-dracula-at-night
 be5invis.vscode-custom-css
 BeardedBear.beardedtheme
+Catppuccin.catppuccin-vsc
 ChrisHines.monochrome
+cosmicsarthak.cosmicsarthak-neon-theme
 DaltonMenezes.aura-theme
 DavidAnson.vscode-markdownlint
 daylerees.rainglow
+degreat.fonted
+dm67x.bogster
 DotJoshJohnson.xml
 dracula-theme.theme-dracula
 eamodio.gitlens
@@ -73,6 +78,7 @@ quarto.quarto
 qufiwefefwoyn.kanagawa
 rid9.datetime
 rozbo.papercolor-vscode
+sainnhe.everforest
 sainnhe.sonokai
 sdras.night-owl
 silverquark.dancehelix
