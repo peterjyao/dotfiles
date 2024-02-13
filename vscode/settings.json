@@ -178,7 +178,7 @@
     "[sql]": {
         "editor.defaultFormatter": "mtxr.sqltools"
     },
-    "editor.fontFamily": "'M PLUS CODE Latin 50','Dank Mono','Cascadia Mono','Inconsolata','Fira Mono', Consolas, 'Courier New', monospace",
+    "editor.fontFamily": "'Dank Mono','Cascadia Mono','Inconsolata','Fira Mono', Consolas, 'Courier New', monospace",
     "autoDocstring.docstringFormat": "numpy",
     "editor.bracketPairColorization.enabled": false,
     "terminal.integrated.cursorBlinking": true,
@@ -188,9 +188,11 @@
     "terminal.integrated.fontWeight": 400,
     "editor.scrollbar.vertical": "hidden",
     "editor.scrollbar.horizontal": "hidden",
-    "window.zoomLevel": 0.5,
-    "workbench.colorTheme": "Monochrome Light Amplified",
     "terminal.integrated.fontSize": 13,
     "editor.fontSize": 13,
-    "fonted.font": "M PLUS CODE Latin 50",
+    "fonted.font": "Dank Mono",
+    "markdown.preview.fontFamily": "Matter, sans-serif",
+    "markdown.preview.fontSize": 15,
+    "workbench.colorTheme": "Gray Matter Light",
+    "http.proxy": ""
 }

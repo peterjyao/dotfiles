@@ -53,6 +53,7 @@ ms-mssql.mssql
 ms-mssql.sql-bindings-vscode
 ms-mssql.sql-database-projects-vscode
 ms-python.black-formatter
+ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
@@ -84,6 +85,7 @@ sdras.night-owl
 silverquark.dancehelix
 sldobri.bunker
 StepanVanzuriak.mono
+stkb.rewrap
 teabyii.ayu
 tinkertrain.theme-panda
 tootone.org-mode

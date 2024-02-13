@@ -6,18 +6,18 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+c"
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "down"
             },
             "keys": "alt+j"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
         },
         {
             "command": "paste",
@@ -67,6 +67,14 @@
         {
             "command": "unbound",
             "keys": "alt+down"
+        },
+        {
+            "command": "unbound",
+            "keys": "shift+s"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+s"
         },
         {
             "command": 
@@ -141,6 +149,12 @@
         {
             "command": "toggleFullscreen",
             "keys": "alt+shift+enter"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane"
+            }
         }
     ],
     "alwaysShowTabs": true,
@@ -150,7 +164,7 @@
     "focusFollowMouse": false,
     "initialCols": 140,
     "initialRows": 30,
-    "launchMode": "maximizedFocus",
+    "launchMode": "maximized",
     "newTabMenu": 
     [
         {
@@ -168,8 +182,8 @@
             "experimental.retroTerminalEffect": false,
             "font": 
             {
-                "face": "Dank Mono",
-                "size": 10.0,
+                "face": "CommitMono-MyLight",
+                "size": 9.0,
                 "weight": "normal"
             },
             "intenseTextStyle": "bright",
@@ -635,7 +649,7 @@
             "brightWhite": "#FFA066",
             "brightYellow": "#DCD7BA",
             "cursorColor": "#DCD7BA",
-            "cyan": "#FFA066",
+            "cyan": "#DCD7BA",
             "foreground": "#DCD7BA",
             "green": "#76946A",
             "name": "Kanagawa-monochrome",
@@ -925,7 +939,7 @@
             "background": "#2C2E34",
             "black": "#2C2E34",
             "blue": "#76CCE0",
-            "brightBlack": "#7F7F80",
+            "brightBlack": "#E2E2E3",
             "brightBlue": "#E2E2E3",
             "brightCyan": "#E2E2E3",
             "brightGreen": "#E2E2E3",
@@ -935,7 +949,7 @@
             "brightYellow": "#E2E2E3",
             "cursorColor": "#FFFFFF",
             "cyan": "#F39660",
-            "foreground": "#7F7F80",
+            "foreground": "#E2E2E3",
             "green": "#9ED072",
             "name": "Sonokai-monochrome",
             "purple": "#B39DF3",
@@ -1042,50 +1056,6 @@
     "tabSwitcherMode": "disabled",
     "tabWidthMode": "equal",
     "theme": "system",
-    "themes": 
-    [
-        {
-            "name": "legacyDark",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "dark",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacyLight",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "light",
-                "useMica": false
-            }
-        },
-        {
-            "name": "legacySystem",
-            "tab": 
-            {
-                "background": null,
-                "showCloseButton": "always",
-                "unfocusedBackground": null
-            },
-            "window": 
-            {
-                "applicationTheme": "system",
-                "useMica": false
-            }
-        }
-    ],
+    "themes": [],
     "useAcrylicInTabRow": true
 }

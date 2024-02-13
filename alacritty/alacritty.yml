@@ -17,7 +17,7 @@ window:
   # Window dimensions in character columns and lines
   # (changes require restart)
   dimensions:
-    columns: 110
+    columns: 120
     lines: 30
   position:
     x: 500
@@ -57,22 +57,26 @@ scrolling:
 font:
   # The normal (roman) font face to use.
   normal:
-    family: Cousine for Powerline
+    # family: CommitMono-MyLight
+    family: Dank Mono
     style: Regular
 
   # The bold font face
   bold:
-    family: Cousine for Powerline
-    style: Bold
+    # family: CommitMono-MyLight
+    family: Dank Mono
+    style: Regular
 
   # The italic font face
   italic:
-    family: Cousine for Powerline
+    # family: CommitMono-MyLight
+    family: Dank Mono
     style: Regular Italic
 
   bold_italic:
-    family: Cousine for Powerline
-    style: Bold Italic
+    # family: CommitMono-MyLight
+    family: Dank Mono
+    style: Regular Italic
 
   # Point size of the font
   size: 10
@@ -289,29 +293,74 @@ hints:
        key: U
        mods: Control|Shift
 
-# Sonokai
+# # Sonokai
+# colors:
+#   primary:
+#     background: "0x2c2e34"
+#     foreground: "0xe2e2e3"
+
+#   normal:
+#     black: "0x181819"
+#     red: "0xfc5d7c"
+#     green: "0x9ed072"
+#     yellow: "0xe7c664"
+#     blue: "0x76cce0"
+#     magenta: "0xb39df3"
+#     cyan: "0xf39660"
+#     white: "0xe2e2e3"
+
+#   bright:
+#     black: "0x7f8490"
+#     red: "0xfc5d7c"
+#     green: "0x9ed072"
+#     yellow: "0xe7c664"
+#     blue: "0x76cce0"
+#     magenta: "0xb39df3"
+#     cyan: "0xf39660"
+#     # white: "0x505050"
+#     white: "0xe2e2e3"
+
+# Colors (Kanagawa Wave)
+# Source: https://github.com/rebelot/kanagawa.nvim
 colors:
   primary:
-    background: "0x2c2e34"
-    foreground: "0xe2e2e3"
+    background: '0x1f1f28'
+    foreground: '0xdcd7ba'
 
   normal:
-    black: "0x181819"
-    red: "0xfc5d7c"
-    green: "0x9ed072"
-    yellow: "0xe7c664"
-    blue: "0x76cce0"
-    magenta: "0xb39df3"
-    cyan: "0xf39660"
-    white: "0xe2e2e3"
+    black:   '0x090618'
+    red:     '0xc34043'
+    green:   '0x76946a'
+    # yellow:  '0xc0a36e'
+    yellow:  '0xdcd7ba'
+    blue:    '0x7e9cd8'
+    magenta: '0x957fb8'
+    cyan:    '0xffa066'
+    # white:   '0xc8c093'
+    white:   '0xdcd7ba'
 
   bright:
-    black: "0x7f8490"
-    red: "0xfc5d7c"
-    green: "0x9ed072"
-    yellow: "0xe7c664"
-    blue: "0x76cce0"
-    magenta: "0xb39df3"
-    cyan: "0xf39660"
-    # white: "0x505050"
-    white: "0xe2e2e3"
+    # black:   '0x727169'
+    # red:     '0xe82424'
+    # green:   '0x98bb6c'
+    # yellow:  '0xe6c384'
+    # blue:    '0x7fb4ca'
+    # magenta: '0x938aa9'
+    # cyan:    '0x7aa89f'
+    # white:   '0xdcd7ba'
+    black:   '0x727169'
+    red:     '0xdcd7ba'
+    green:   '0xdcd7ba'
+    yellow:  '0xdcd7ba'
+    blue:    '0xdcd7ba'
+    magenta: '0xdcd7ba'
+    cyan:    '0x7e9cd8'
+    white:   '0xdcd7ba'
+
+  selection:
+    background: '0x2d4f67'
+    foreground: '0xc8c093'
+
+  indexed_colors:
+    - { index: 16, color: '0xffa066' }
+    - { index: 17, color: '0xff5d62' }
