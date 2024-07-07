@@ -1,12 +1,10 @@
-[http]
-	sslbackend = schannel
 [user]
 	name = Yao Peter - Basel
 	email = peter.yao@lonza.com
-[init]
-	defaultBranch = main
 [core]
-	excludesfile = C:\\Users\\pyao1\\.gitignore_global
-	pager = 
-[credential]
-	helper = manager
+	excludesFile = /home/pyao/.gitignore_global
+[push]
+	autoSetupRemote = true
+	default = current
+[remote]
+	pushDefault = origin

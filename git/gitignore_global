@@ -1,0 +1,12 @@
+*code-workspace
+*__pycache__/
+*\.venv*/
+*\.venv*
+*.helix/
+build/
+*credentials/
+*.egg-info/
+*.xlsx
+*.png
+*.parquet
+*.pkl
