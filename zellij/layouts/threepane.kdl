@@ -1,0 +1,47 @@
+layout {
+    pane size=1 borderless=true {
+        plugin location="zellij:compact-bar"
+    }
+    pane split_direction="vertical" {
+        pane stacked=true size="16%" { 
+            pane {
+                command "lazygit"
+            }
+        }
+        pane stacked=true {
+            pane {
+                name "broot"
+                command "broot"
+                // args "-g" "--color" "no"
+                args "--color" "no"
+            }
+            pane {
+                name "broot"
+                command "broot"
+                // args "-g" "--color" "no"
+                args "--color" "no"
+                focus true
+            }
+            pane {
+                name "bash"
+            }
+        }
+        pane stacked=false {
+            pane {
+                command "lf"
+            }
+            pane {
+                name "bash"
+            }
+            // pane {
+            //     name "bash"
+            // }
+        }
+    }
+    default_tab_template {
+        pane size=1 borderless=true {
+            plugin location="zellij:compact-bar"
+        }
+        pane
+    }
+}

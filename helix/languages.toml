@@ -1,8 +1,6 @@
 [[language]]
 name = "python"
-# rulers = [89] 
+# rulers = [89]
 roots = ["pyproject.toml"]
-auto-format = false
-formatter = { command = "black", args = ["--quiet", "-"] }
-# language-server = { command = "pyright-langserver", args = ["--stdio"] }
-# config = {} # <- this is the important line
+auto-format = true
+formatter = { command = "sh", args = ["-c", "black --quiet - | isort -"] }

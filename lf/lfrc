@@ -1,19 +1,12 @@
 set incfilter true
 set nohidden
-# set ratios '1:1'
 set ratios '1:2:2'
-# set nopreview
-# set ratios 1
 set info size:time
-# set infotimefmtold '2006-01-02'
-# set infotimefmtnew '2006-01-02'
 set infotimefmtold '2006-01-02  15:04'
 set infotimefmtnew '2006-01-02  15:04'
-map E %explorer.exe .
-map <delete> %recycle-bin %f%
+set hidecursorinactive
 map <tab> toggle
-# map Y $echo %fx% | clip
-map Y $set filepathwithquotes=%fx% && echo %filepathwithquotes:~1,-2% | clip
 map p :paste;clear
-map C $code %fx%
 set cursorpreviewfmt ""
+# map o $$VD "$f"
+map E $explorer.exe .
